@@ -1,0 +1,23 @@
+---
+title: Painéis
+description: Escolha o painel pela pergunta que você quer responder
+---
+
+import Link from '@docusaurus/Link';
+
+# Painéis
+
+Os mesmos dados, organizados por **pergunta**. Cada painel tem gráficos interativos (passe o cursor), uma **visão em tabela** para cada gráfico e notas sobre os limites dos dados.
+
+<div className="persona-grid">
+  <div className="persona"><h3>Quanto e quando?</h3><p>Volume mensal e anual, canais, situação e sazonalidade.</p><Link to="/painel/visao-geral">Visão geral →</Link></div>
+  <div className="persona"><h3>Sobre o quê?</h3><p>Temas, serviços e a evolução do que a cidade pede.</p><Link to="/painel/temas">Temas e serviços →</Link></div>
+  <div className="persona"><h3>Onde?</h3><p>Mapa por distrito e mapa de calor em células de 500 m.</p><Link to="/painel/territorio">Território →</Link></div>
+  <div className="persona"><h3>Quem resolve e em quanto tempo?</h3><p>Órgãos, taxa de finalização e faixas de prazo (2020+).</p><Link to="/painel/desempenho">Desempenho →</Link></div>
+  <div className="persona"><h3>Posso confiar?</h3><p>Cobertura por período, anomalias e validações.</p><Link to="/painel/qualidade">Qualidade dos dados →</Link></div>
+  <div className="persona"><h3>E a camada original?</h3><p>Reativação de abrigos e pontos de ônibus extintos (GeoSampa, 2020).</p><Link to="/painel/reativacao">Reativação de abrigos →</Link></div>
+</div>
+
+:::info[Por que organizar por pergunta?]
+Foi uma de seis formas de organização que comparamos. O estudo completo, com critérios e a decisão, está em [Arquitetura da informação](/docs/metodologia/arquitetura-da-informacao).
+:::

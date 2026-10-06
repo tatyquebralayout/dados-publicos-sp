@@ -1,0 +1,8 @@
+[Unit]
+Description=Atualização dos dados públicos (SP156/GeoSampa)
+
+[Service]
+Type=oneshot
+# Ajuste para onde o repositório foi clonado (%h = home do usuário).
+WorkingDirectory=%h/reativacao-abrigos-geosampa
+ExecStart=%h/reativacao-abrigos-geosampa/deploy/run_update.sh

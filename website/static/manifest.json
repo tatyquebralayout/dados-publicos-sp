@@ -1,0 +1,11 @@
+{
+  "name": "Dados Públicos de São Paulo",
+  "short_name": "Dados SP",
+  "description": "SP156 e GeoSampa: painéis e documentação de dados abertos",
+  "start_url": "/reativacao-abrigos-geosampa/",
+  "scope": "/reativacao-abrigos-geosampa/",
+  "display": "standalone",
+  "background_color": "#0d366b",
+  "theme_color": "#2a78d6",
+  "icons": [{"src": "img/logo.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any"}]
+}

@@ -1,0 +1,9 @@
+[Unit]
+Description=Roda a atualização dos dados públicos toda semana
+
+[Timer]
+OnCalendar=Mon *-*-* 03:00:00
+Persistent=true
+
+[Install]
+WantedBy=timers.target

@@ -1,0 +1,38 @@
+# Catálogo de camadas. Para escalar, basta acrescentar entradas (ou gerar a lista via `catalog`).
+wfs_url: http://wfs.geosampa.prefeitura.sp.gov.br/geoserver/ows
+page_size: 10000          # features por requisição (paginação WFS 2.0)
+timezone: America/Sao_Paulo
+layers:
+  sac_reativacao_abrigo_ponto_extinto:
+    typename: geoportal:sac_reativacao_abrigo_ponto_extinto
+    metadata_uuid: 5703aa4e-e3ca-4284-812a-0d1e2fde09bb
+    family: sac            # entra na silver unificada sac_todas
+    srid: 31983            # SIRGAS 2000 / UTM 23S
+    key: cd_identificador
+    date_cols: [dt_abertura, dt_parecer]
+    text_cols: [nm_logradouro, sg_orgao_responsavel, tx_situacao_solicitacao,
+                tx_canal_atendimento, dc_tema, dc_assunto, dc_servico]
+
+  distrito_municipal:   # referência geográfica (polígonos) para a fase 5
+    typename: geoportal:distrito_municipal
+    srid: 31983
+    key: cd_identificador_distrito
+    date_cols: []
+    text_cols: []
+
+# Famílias: expandem para todas as camadas do catálogo (config/catalog.csv) cujo nome casa com `pattern`.
+# Rode `dados-publicos catalog` antes. Excluir uma camada: lista `exclude`.
+families:
+  sac:
+    pattern: "^sac_"
+    exclude: []
+    key: cd_identificador
+    date_cols: [dt_abertura, dt_parecer]
+    text_cols: [nm_logradouro, sg_orgao_responsavel, tx_situacao_solicitacao,
+                tx_canal_atendimento, dc_tema, dc_assunto, dc_servico]
+
+# Base SP156 completa (CKAN do Portal de Dados Abertos). Arquivos CSV trimestrais/semestrais.
+sp156:
+  ckan_package: https://dados.prefeitura.sp.gov.br/api/3/action/package_show?id=dados-do-sp156
+  from_year: 2015
+  workers: 2

@@ -1,0 +1,37 @@
+---
+title: Introdução
+slug: /intro
+sidebar_position: 1
+description: O que é este projeto, o que ele contém e como navegar
+---
+
+import Link from '@docusaurus/Link';
+
+# Dados Públicos de São Paulo
+
+Este projeto trata, documenta e abre em painéis dois conjuntos de dados abertos da Prefeitura de São Paulo sobre **solicitações de cidadãos** (SP156):
+
+| | Conteúdo | Volume |
+|---|---|---|
+| **Base SP156 completa** | Portal de Dados Abertos (CKAN), 2015T1 a 2026T2 | 18.774.202 solicitações |
+| **Camadas GeoSampa `sac_*`** | 94 camadas georreferenciadas (WFS) | 143.461 solicitações, abr–set/2020 |
+
+O ponto de partida foi uma camada específica do GeoSampa, [Reativação de um abrigo ou ponto que foi extinto](./catalogo/reativacao-abrigos.md). Os dados desta camada eram poucos (45 registros); a análise de contexto levou à base completa.
+
+## Como navegar
+
+<div className="persona-grid">
+  <div className="persona"><h3>Ver os números</h3><p>Seis painéis, um por pergunta.</p><Link to="/painel">Painéis →</Link></div>
+  <div className="persona"><h3>Usar os dados</h3><p>Fontes, camadas e dicionário de colunas.</p><Link to="/docs/catalogo">Catálogo →</Link></div>
+  <div className="persona"><h3>Entender o tratamento</h3><p>Decisões, anomalias da fonte e qualidade.</p><Link to="/docs/metodologia/plano-de-tratamento">Metodologia →</Link></div>
+  <div className="persona"><h3>Rodar o pipeline</h3><p>Passo a passo, atualização e publicação.</p><Link to="/docs/guias/executar-o-pipeline">Guias →</Link></div>
+</div>
+
+## O que o site não faz
+- **Não publica linhas individuais, endereços ou logradouros.** Só agregados. Células de mapa com menos de 5 solicitações são ocultadas.
+- **Não normaliza por população.** Os mapas mostram contagens, não taxas.
+- **Não compara prazos antes de 2020**, porque o campo da fonte não representa a finalização nesse período.
+- **Não tem vínculo oficial** com a Prefeitura de São Paulo.
+
+## Licença e uso
+Os dados do CKAN são **Creative Commons CCZero**; as camadas do GeoSampa constam como **sem restrições** nos metadados. Confira sempre a fonte oficial antes de redistribuir.

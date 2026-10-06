@@ -1,0 +1,30 @@
+[project]
+name = "dados-publicos"
+version = "0.1.0"
+description = "Pipeline de tratamento de dados abertos (GeoSampa / SP156) em Python"
+requires-python = ">=3.11"
+dependencies = [
+  "requests>=2.31",
+  "pyyaml>=6",
+  "polars>=1.0",
+  "duckdb>=1.0",
+  "pyarrow>=15",
+  "pyproj>=3.6",
+  "fastexcel>=0.12",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[project.scripts]
+dados-publicos = "dados_publicos.cli:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

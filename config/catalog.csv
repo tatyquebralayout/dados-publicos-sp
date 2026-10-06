@@ -1,0 +1,485 @@
+typename,name,title,srid
+geoportal:abastecimento_adutora,abastecimento_adutora,Abastecimento - Adutoras (Mapa 6),31983
+geoportal:acessibilidade_smped,acessibilidade_smped,Selo de Acessibilidade Arquitetônica,31983
+geoportal:acidente_cet,acidente_cet,Acidentes,31983
+geoportal:adesampa,adesampa,ADESampa,31983
+geoportal:agencia_funeraria,agencia_funeraria,Agência Funerária,31983
+geoportal:aiu_assentamento_precario_pinheiros,aiu_assentamento_precario_pinheiros,Assentamentos Precários - Arco Pinheiros,31983
+geoportal:aiu_compartimento_ambiental_jurubatuba,aiu_compartimento_ambiental_jurubatuba,Compartimento Ambiental - Arco Jurubatuba,31983
+geoportal:aiu_compartimento_ambiental_pinheiros,aiu_compartimento_ambiental_pinheiros,Compartimento ambiental - Arco Pinheiros,31983
+geoportal:aiu_diretriz_urbanistica_arco_jurubatuba,aiu_diretriz_urbanistica_arco_jurubatuba,Diretrizes Urbanísticas - Arco Jurubatuba,31983
+geoportal:aiu_eixo_estrategico_pinheiros,aiu_eixo_estrategico_pinheiros,Eixos estratégicos - Arco Pinheiros,31983
+geoportal:aiu_intervencao_pinheiros,aiu_intervencao_pinheiros,Intervenções - Arco Pinheiros,31983
+geoportal:aiu_intervencao_praca_pinheiros,aiu_intervencao_praca_pinheiros,Intervenções Praças - Arco Pinheiros,31983
+geoportal:aiu_melhoramento_viario_jurubatuba,aiu_melhoramento_viario_jurubatuba,Melhoramentos Viários - Arco Jurubatuba,31983
+geoportal:aiu_melhoramento_viario_pinheiros,aiu_melhoramento_viario_pinheiros,Melhoramentos viários - Arco Pinheiros,31983
+geoportal:aiu_modalidade_habitacional_jurubatuba,aiu_modalidade_habitacional_jurubatuba,Modalidades Habitacionais Contempladas - Arco Jurubatuba,31983
+geoportal:aiu_parametro_urbanistico_jurubatuba,aiu_parametro_urbanistico_jurubatuba,Parâmetros Urbanísticos - Arco Jurubatuba,31983
+geoportal:aiu_parametro_urbanistico_pinheiros,aiu_parametro_urbanistico_pinheiros,Parâmetros Urbanísticos - Arco Pinheiros,31983
+geoportal:aiu_perimetro_jurubatuba,aiu_perimetro_jurubatuba,Perímetros - Arco Jurubatuba,31983
+geoportal:aiu_perimetro_pinheiros,aiu_perimetro_pinheiros,Perímetros - Arco Pinheiros,31983
+geoportal:aiu_sistema_area_verde_jurubatuba,aiu_sistema_area_verde_jurubatuba,Sistema de Áreas Verdes - Arco Jurubatuba,31983
+geoportal:aiu_sistema_mobilidade_arco_jurubatuba,aiu_sistema_mobilidade_arco_jurubatuba,Sistema de Mobilidade - Arco Jurubatuba,31983
+geoportal:aiu_vl_alinhamento_viario,aiu_vl_alinhamento_viario,Alinhamento Viário AIU-VL (Anexo 2),31983
+geoportal:aiu_vl_perimetro_adesao,aiu_vl_perimetro_adesao,Perímetro de Adesão AIU-VL (Anexo 1),31983
+geoportal:aiu_vl_projeto_especifico,aiu_vl_projeto_especifico,Projeto Específico AIU-VL (Anexo 1),31983
+geoportal:aiu_vl_zeis1,aiu_vl_zeis1,ZEIS-1/ AIU-VL (Anexo 1),31983
+geoportal:alinhamento_viario_aiu,alinhamento_viario_aiu,Alinhamento viário (6),31983
+geoportal:apoio_terrestre_2017,apoio_terrestre_2017,Apoio Terrestre 2017,31983
+geoportal:apoio_terrestre_2020,apoio_terrestre_2020,Apoio Terrestre 2020,31983
+geoportal:app_oida,app_oida,Áreas Prioritárias de Proteção da Operação Integrada em Defesa das Águas (APP-OIDA),31983
+geoportal:area_contaminada_reabilitada_svma,area_contaminada_reabilitada_svma,Área Contaminada e Reabilitada,31983
+geoportal:area_contexto,area_contexto,Municípios do Estado de São Paulo,31983
+geoportal:area_influencia_metro,area_influencia_metro,Metrô - Área de Influência,31983
+geoportal:area_influencia_trem,area_influencia_trem,Trem Metropolitano – Área de Influência,31983
+geoportal:area_inundavel,area_inundavel,PDMAT3 100 anos,31983
+geoportal:area_qualificacao_transformacao_aiu,area_qualificacao_transformacao_aiu,Áreas de Qualificação e Transformação (3),31983
+geoportal:area_risco_geologico,area_risco_geologico,Risco Geológico,31983
+geoportal:area_verde_aiu,area_verde_aiu,Áreas verdes - AIU SCE (4),31983
+geoportal:arruamento_aprovado,arruamento_aprovado,Arruamento Aprovado - ARR,31983
+geoportal:arruamento_regularizado,arruamento_regularizado,Arruamento Regularizado - AU,31983
+geoportal:articulacao_folha_aiu,articulacao_folha_aiu,Plano de melhoramentos viários - Articulação de folhas (6),31983
+geoportal:arvore,arvore,Arborização viária,31983
+geoportal:aterro_rcc,aterro_rcc,Aterro RCC,31983
+geoportal:aterro_sanitario,aterro_sanitario,Aterro Sanitário,31983
+geoportal:bacia_hidrografica,bacia_hidrografica,Bacia Hidrográfica,31983
+geoportal:base_samu,base_samu,Bases do SAMU,31983
+geoportal:batalhao_policia_militar,batalhao_policia_militar,Limite dos Batalhões da Polícia Militar,31983
+geoportal:bicicletario_paraciclo,bicicletario_paraciclo,Bicicletário e Paraciclo,31983
+geoportal:boulevard_aiu,boulevard_aiu,Boulevares (Art. 21 §4º. Quadro 2),31983
+geoportal:caderno_drenagem,caderno_drenagem,Cadernos de Drenagem,31983
+geoportal:calcada,calcada,Calçadas,31983
+geoportal:caps_ad,caps_ad,CAPS AD,31983
+geoportal:carta_geotecnica,carta_geotecnica,Carta Geotécnica 2024,31983
+geoportal:cartorio_registro_imovel,cartorio_registro_imovel,Cartórios de Registro de Imóveis,31983
+geoportal:central_intermediacao_libra,central_intermediacao_libra,Central de Intermediação de Libras,31983
+geoportal:central_triagem_cooperativa,central_triagem_cooperativa,Cooperativas Habilitadas,31983
+geoportal:central_triagem_mecanizada,central_triagem_mecanizada,Central de Triagem Mecanizada,31983
+geoportal:centro_referencia_assistencia_social,centro_referencia_assistencia_social,Centro de Referência de Assistência Social,31983
+geoportal:cidade_solidaria,cidade_solidaria,Cidade Solidária,31983
+geoportal:classificacao_viaria_cet,classificacao_viaria_cet,Classificacao Viaria CET,31983
+geoportal:classificacao_viaria_quadro_9,classificacao_viaria_quadro_9,Classificação viária – Quadro 9,31983
+geoportal:cobertura_vegetal,cobertura_vegetal,Mapeamento da Cobertura Vegetal 2020,31983
+geoportal:comando_policia_militar,comando_policia_militar,Limite dos comandos da Polícia Militar,31983
+geoportal:companhia_policia_militar,companhia_policia_militar,Limite das Companhias da Polícia Militar,31983
+geoportal:compartimento_ambiental_aiu,compartimento_ambiental_aiu,Compartimentos ambientais (4),31983
+geoportal:complexo_saude_existente,complexo_saude_existente,Complexos de Saúde – Art. 115,31983
+geoportal:concessao_parceria,concessao_parceria,Concessões e Parcerias – PMD,31983
+geoportal:conectividade_fablab_grande,conectividade_fablab_grande,FabLab - Grande Laboratório,31983
+geoportal:conectividade_fablab_pequeno,conectividade_fablab_pequeno,FabLab - Pequeno Laboratório,31983
+geoportal:conectividade_telecentro,conectividade_telecentro,Telecentro,31983
+geoportal:conjunto,conjunto,Conjunto - CJ,31983
+geoportal:conselho_tutelar_perimetro,conselho_tutelar_perimetro,Área de atuação dos Conselhos Tutelares,31983
+geoportal:contagem_linha_base_ciclista,contagem_linha_base_ciclista,Contagem de linha de base de ciclistas,31983
+geoportal:controle_uso_via_publica_geoinfra,controle_uso_via_publica_geoinfra,Controle de uso de vias públicas - Obras (Geoinfra),31983
+geoportal:corredor_ecologico,corredor_ecologico,Corredores Ecológicos,31983
+geoportal:corredor_onibus,corredor_onibus,Corredores,31983
+geoportal:cota_solidariedade,cota_solidariedade,Cota de Solidariedade,31983
+geoportal:curva_intermediaria,curva_intermediaria,Curva Intermediária,31983
+geoportal:curva_intermediaria_s,curva_intermediaria_s,Curva Intermediária-S,31983
+geoportal:curva_mestra,curva_mestra,Curva Mestra,31983
+geoportal:curva_mestra_s,curva_mestra_s,Curva Mestra-S,31983
+geoportal:declividade,declividade,Declividade,31983
+geoportal:delegacia_policia_civil,delegacia_policia_civil,Limite das Delegacias da Polícia Civil,31983
+geoportal:deliberacao_ctlu,deliberacao_ctlu,Deliberações CTLU,31983
+geoportal:densidade_demografica,densidade_demografica,Densidade Demográfica 2022,31983
+geoportal:departamento_cet,departamento_cet,Departamento de Engenharia de Tráfego - DET,31983
+geoportal:descomplica,descomplica,Descomplica SP,31983
+geoportal:desmembramento_gleba,desmembramento_gleba,Desmembramento de Gleba - DG,31983
+geoportal:diagnostico_socioambiental_-_potencialidades,diagnostico_socioambiental_-_potencialidades,Diagnóstico Socioambiental - Potencialidades,31983
+geoportal:diagnostico_socioambiental_-_riscos,diagnostico_socioambiental_-_riscos,Diagnóstico Socioambiental - Riscos,31983
+geoportal:diretoria_regional_educacao,diretoria_regional_educacao,Diretorias Regionais de Educação,31983
+geoportal:diretriz,diretriz,Diretriz - DZ,31983
+geoportal:distrito_municipal,distrito_municipal,Distrito,31983
+geoportal:drenagem,drenagem,Drenagem,31983
+geoportal:ecoponto,ecoponto,Ecoponto,31983
+geoportal:edificacao,edificacao,Edificações,31983
+geoportal:eixo_ambiental_aiu,eixo_ambiental_aiu,Eixos ambientais (7),31983
+geoportal:eixo_ativado_decreto,eixo_ativado_decreto,Eixos Ativados por Decreto,31983
+geoportal:eixo_estrategico_transformacao_aiu,eixo_estrategico_transformacao_aiu,Eixos estratégicos e de transformação (3),31983
+geoportal:enquadramento_vila,enquadramento_vila,Enquadramento como Vila,31983
+geoportal:equipamento_assistencia_social,equipamento_assistencia_social,Assistência Social,31983
+geoportal:equipamento_bom_prato,equipamento_bom_prato,Bom Prato,31983
+geoportal:equipamento_bombeiros,equipamento_bombeiros,Bombeiros,31983
+geoportal:equipamento_casas_mediacao,equipamento_casas_mediacao,Casa Mediação,31983
+geoportal:equipamento_ccz,equipamento_ccz,Animais,31983
+geoportal:equipamento_cemiterio,equipamento_cemiterio,Cemitério,31983
+geoportal:equipamento_conselho_tutelar,equipamento_conselho_tutelar,Conselho Tutelar,31983
+geoportal:equipamento_cultura_bibliotecas,equipamento_cultura_bibliotecas,Bibliotecas,31983
+geoportal:equipamento_cultura_espacos_culturais,equipamento_cultura_espacos_culturais,Espaços Culturais,31983
+geoportal:equipamento_cultura_museus,equipamento_cultura_museus,Museus,31983
+geoportal:equipamento_cultura_outros,equipamento_cultura_outros,Cultura - Outros,31983
+geoportal:equipamento_cultura_teatro_cinema_show,equipamento_cultura_teatro_cinema_show,Teatro/Cinema/Shows,31983
+geoportal:equipamento_educacao_ceu,equipamento_educacao_ceu,CEU(Centro Educacional Unificado),31983
+geoportal:equipamento_educacao_ensino_tecnico_rede_publica,equipamento_educacao_ensino_tecnico_rede_publica,Ensino técnico público,31983
+geoportal:equipamento_educacao_infantil_rede_publica,equipamento_educacao_infantil_rede_publica,Educação Infantil,31983
+geoportal:equipamento_educacao_outros,equipamento_educacao_outros,Educação - Outros,31983
+geoportal:equipamento_educacao_rede_privada,equipamento_educacao_rede_privada,Rede Privada,31983
+geoportal:equipamento_educacao_rede_publica,equipamento_educacao_rede_publica,Ensino Fundamental e Médio,31983
+geoportal:equipamento_educacao_senai_sesi_senac,equipamento_educacao_senai_sesi_senac,Senai / Sesi / Senac,31983
+geoportal:equipamento_entidade_crianca_adolescente,equipamento_entidade_crianca_adolescente,Entidades Criança e Adolescente,31983
+geoportal:equipamento_esporte_centro_esportivo,equipamento_esporte_centro_esportivo,Centro Esportivo,31983
+geoportal:equipamento_esporte_clubes,equipamento_esporte_clubes,Clubes,31983
+geoportal:equipamento_esporte_clubesdacomunidade,equipamento_esporte_clubesdacomunidade,Clubes da Comunidade,31983
+geoportal:equipamento_esporte_estadios,equipamento_esporte_estadios,Estádios,31983
+geoportal:equipamento_esporte_outros,equipamento_esporte_outros,Esporte - Outros,31983
+geoportal:equipamento_feira_livre,equipamento_feira_livre,Feira livre,31983
+geoportal:equipamento_guarda_civil_metropolitana,equipamento_guarda_civil_metropolitana,Guarda Civil Metropolitana,31983
+geoportal:equipamento_mercados_municipais,equipamento_mercados_municipais,Mercados Municipais,31983
+geoportal:equipamento_policia_civil,equipamento_policia_civil,Polícia Civil,31983
+geoportal:equipamento_policia_militar,equipamento_policia_militar,Polícia Militar,31983
+geoportal:equipamento_praca_wifi,equipamento_praca_wifi,Wi-Fi Livre,31983
+geoportal:equipamento_rede_servicos,equipamento_rede_servicos,Rede de Serviços,31983
+geoportal:equipamento_sacoloes,equipamento_sacoloes,Sacolões,31983
+geoportal:equipamento_saude_abrangencia_ubs,equipamento_saude_abrangencia_ubs,Abrangência das Unidades Básicas de Saúde,31983
+geoportal:equipamento_saude_ambulatorios_especializados,equipamento_saude_ambulatorios_especializados,Ambulatórios especializados,31983
+geoportal:equipamento_saude_cobertura_familia,equipamento_saude_cobertura_familia,Área de cobertura – Saúde da Família,31983
+geoportal:equipamento_saude_coordenadoria_regional,equipamento_saude_coordenadoria_regional,Coordenadoria Regional de Saúde,31983
+geoportal:equipamento_saude_hospital,equipamento_saude_hospital,Hospital,31983
+geoportal:equipamento_saude_outros,equipamento_saude_outros,Saúde - Outros,31983
+geoportal:equipamento_saude_saude_mental,equipamento_saude_saude_mental,Saúde mental,31983
+geoportal:equipamento_saude_supervisao_tecnica,equipamento_saude_supervisao_tecnica,Supervisão Técnica de Saúde,31983
+geoportal:equipamento_saude_ubs_posto_centro,equipamento_saude_ubs_posto_centro,UBS/Posto/Centro de Saúde,31983
+geoportal:equipamento_saude_unidades_dst-aids,equipamento_saude_unidades_dst-aids,Unidades DST/AIDS,31983
+geoportal:equipamento_saude_urgencia_emergencia,equipamento_saude_urgencia_emergencia,Urgência / Emergência,31983
+geoportal:equipamento_saude_vigilancia_saude,equipamento_saude_vigilancia_saude,Vigilância em saúde,31983
+geoportal:equipamento_shopping_center,equipamento_shopping_center,Shopping Center,31983
+geoportal:esgotamento_rede,esgotamento_rede,Esgotamento Redes (Mapa 7),31983
+geoportal:estabelecimento_vaga_especial,estabelecimento_vaga_especial,Vagas de Deficiente e Idoso em Estabelecimentos de Uso Coletivo,31983
+geoportal:estacao_metro,estacao_metro,Metrô - Estação,31983
+geoportal:estacao_metro_projetada,estacao_metro_projetada,Metrô Projeto - Estação,31983
+geoportal:estacao_radio_base,estacao_radio_base,Estação Rádio Base-Termo de Adesão,31983
+geoportal:estacao_transbordo,estacao_transbordo,Estação de Transbordo,31983
+geoportal:estacao_trem,estacao_trem,Trem Metropolitano - Estação,31983
+geoportal:estacao_trem_projetada,estacao_trem_projetada,Trem Metropolitano Projeto - Estação,31983
+geoportal:faixa_onibus,faixa_onibus,Faixas exclusivas,31983
+geoportal:ferrovia_mdc,ferrovia_mdc,Ferrovia,31983
+geoportal:fomento_cultura_periferia,fomento_cultura_periferia,Fomento a cultura da periferia - FCP,31983
+geoportal:fomento_cultura_periferia_responsavel_legal,fomento_cultura_periferia_responsavel_legal,Fomento à Cultura da Periferia – Responsáveis Legais,31983
+geoportal:foto_aerea_drone_helicoptero,foto_aerea_drone_helicoptero,Fotos Aéreas – Drone/Helicóptero,31983
+geoportal:geoconvias_as_built_agua_esgoto,geoconvias_as_built_agua_esgoto,GeoConvias -  as built água e esgoto,31983
+geoportal:geoconvias_as_built_eletricidade,geoconvias_as_built_eletricidade,GeoConvias - as built eletricidade,31983
+geoportal:geoconvias_as_built_gas,geoconvias_as_built_gas,GeoConvias - as built gás,31983
+geoportal:geoconvias_as_built_outros,geoconvias_as_built_outros,GeoConvias - as built outros,31983
+geoportal:geoconvias_as_built_telecomunicacoes,geoconvias_as_built_telecomunicacoes,GeoConvias - as built telecomunicações,31983
+geoportal:geoconvias_faixa_nao_edificavel,geoconvias_faixa_nao_edificavel,Faixa Não Edificável,31983
+geoportal:geoconvias_lei_melhoramento_vigente,geoconvias_lei_melhoramento_vigente,Lei de Melhoramento Viário Vigente,31983
+geoportal:GEOSAMPA_area_cedida_cidadao,GEOSAMPA_area_cedida_cidadao,Área cedida,31983
+geoportal:GEOSAMPA_area_contaminada_sigac,GEOSAMPA_area_contaminada_sigac,Área Potencial e Suspeita de Contaminação,31983
+geoportal:GEOSAMPA_cadastro_area_publica_cidadao,GEOSAMPA_cadastro_area_publica_cidadao,Cadastro de Área Publica – CAP,31983
+geoportal:GEOSAMPA_cadastro_area_terceiro_cidadao,GEOSAMPA_cadastro_area_terceiro_cidadao,Cadastro de Área de Terceiros,31983
+geoportal:GEOSAMPA_cadparcs_area_protecao_apa,GEOSAMPA_cadparcs_area_protecao_apa,Área de Proteção Ambiental (APA),31983
+geoportal:GEOSAMPA_cadparcs_parque_unidade_conservacao,GEOSAMPA_cadparcs_parque_unidade_conservacao,Parques e Unidades de Conservação,31983
+geoportal:GEOSAMPA_corredor_verde,GEOSAMPA_corredor_verde,Corredores Verdes,31983
+geoportal:GEOSAMPA_croqui_patrimonial_cidadao,GEOSAMPA_croqui_patrimonial_cidadao,Croqui Patrimonial,31983
+geoportal:GEOSAMPA_heliponto,GEOSAMPA_heliponto,RIV-Helipontos,31983
+geoportal:GEOSAMPA_licenca_expedida_multipoligono_internet,GEOSAMPA_licenca_expedida_multipoligono_internet,Licença Ambiental (não industrial),31983
+geoportal:GEOSAMPA_licenca_obra,GEOSAMPA_licenca_obra,Estudo/Relatório de Impacto de Vizinhança (Empreendimentos Imobiliários),31983
+geoportal:GEOSAMPA_psa_contemplado,GEOSAMPA_psa_contemplado,PSA – Contemplados,31983
+geoportal:GEOSAMPA_termo_compromisso_ambiental,GEOSAMPA_termo_compromisso_ambiental,Termo Compromisso Ambiental,31983
+geoportal:GEOSAMPA_terra_indigena,GEOSAMPA_terra_indigena,Legislação Urbana – Terra Indígena,31983
+geoportal:GEOSAMPA_v_cgpabi_vegetacao_significativa,GEOSAMPA_v_cgpabi_vegetacao_significativa,Vegetação Significativa 2023,31983
+geoportal:GEOSAMPA_v_praca_largo,GEOSAMPA_v_praca_largo,Cadastro de Praças e Largos,31983
+geoportal:GEOSAMPA_zoneamento_geoambiental_apa_borore,GEOSAMPA_zoneamento_geoambiental_apa_borore,APA Bororé-Colônia - Zoneamento Geoambiental,31983
+geoportal:GEOSAMPA_zoneamento_geoambiental_apa_cm,GEOSAMPA_zoneamento_geoambiental_apa_cm,APA CM - Zoneamento Geoambiental,31983
+geoportal:gerencia_cet,gerencia_cet,Gerência de Engenharia de Tráfego - GET,31983
+geoportal:habita2geosampa_habi_acao_regularizacao2geosampa,habita2geosampa_habi_acao_regularizacao2geosampa,Ações de Regularização Fundiária,31983
+geoportal:habita2geosampa_habi_conjhabitacional2geosampa_ext,habita2geosampa_habi_conjhabitacional2geosampa_ext,Empreendimento Habitacional,31983
+geoportal:habita2geosampa_habi_cortico2geosampa,habita2geosampa_habi_cortico2geosampa,Cortiço - Habitasampa,31983
+geoportal:habita2geosampa_habi_favela2geosampa,habita2geosampa_habi_favela2geosampa,Favela - Habitasampa,31983
+geoportal:habita2geosampa_habi_loteamento2geosampa,habita2geosampa_habi_loteamento2geosampa,Loteamento Irregular - Habitasampa,31983
+geoportal:habita2geosampa_habi_nucleo2geosampa,habita2geosampa_habi_nucleo2geosampa,Núcleo - Habitasampa,31983
+geoportal:habita2geosampa_habi_obraurbanizacao2geosampa_ext,habita2geosampa_habi_obraurbanizacao2geosampa_ext,Obra de Urbanização em Assentamento Precário,31983
+geoportal:habita2geosampa_habi_reforma_conjuntohabitacional2geosampa_ext,habita2geosampa_habi_reforma_conjuntohabitacional2geosampa_ext,Reforma em Conjuntos Habitacionais,31983
+geoportal:habitacao_popular,habitacao_popular,HIS e HMP – Alvará de Execução,31983
+geoportal:hidrografia_ilha,hidrografia_ilha,Ilha,31983
+geoportal:hidrografia_restituida,hidrografia_restituida,Nível Represa 2004,31983
+geoportal:hierarquia_pedestre,hierarquia_pedestre,Hierarquização para pedestre,31983
+geoportal:iluminacao_publica,iluminacao_publica,Pontos de iluminação pública,31983
+geoportal:imovel_notificado,imovel_notificado,Imóveis Notificados - Função Social,31983
+geoportal:indice_paulista_vulnerabilidadesocial,indice_paulista_vulnerabilidadesocial,Índice Paulista de Vulnerabilidade Social (IPVS),31983
+geoportal:intervencao_caderno_drenagem,intervencao_caderno_drenagem,Intervenções dos Cadernos de Drenagem,31983
+geoportal:junta_servico_militar,junta_servico_militar,Junta de Serviço Militar,31983
+geoportal:licenca_industrial,licenca_industrial,Licença Ambiental (industrial),31983
+geoportal:linha_alta_tensao,linha_alta_tensao,Linha de Alta Tensão,31983
+geoportal:linha_metro,linha_metro,Metrô - Linha,31983
+geoportal:linha_metro_projetada,linha_metro_projetada,Metrô Projeto - Linha,31983
+geoportal:linha_onibus,linha_onibus,Linhas de Ônibus,31983
+geoportal:linha_subterranea_alta_tensao,linha_subterranea_alta_tensao,ISA CTEEP - Linhas Subterrâneas de alta tensão,31983
+geoportal:linha_trem,linha_trem,Trem Metropolitano - Linha,31983
+geoportal:linha_trem_projetada,linha_trem_projetada,Trem Metropolitano Projeto - Linha,31983
+geoportal:lote_cidadao,lote_cidadao,lote_cidadao,31983
+geoportal:lote_incidencia_quadro_2,lote_incidencia_quadro_2,Lotes de incidência Quadro 2,31983
+geoportal:manancial_billings,manancial_billings,Área de Proteção e Recuperação dos Mananciais – Billings,31983
+geoportal:manancial_guarapiranga,manancial_guarapiranga,Área de Proteção e Recuperação dos Mananciais – Guarapiranga,31983
+geoportal:manancial_juquery,manancial_juquery,Área de Proteção e Recuperação dos Mananciais – Alto Juquery,31983
+geoportal:mancha_inundacao_100,mancha_inundacao_100,Mancha de Inundação - 100 anos,31983
+geoportal:mancha_inundacao_25,mancha_inundacao_25,Mancha de Inundação - 25 anos,31983
+geoportal:mancha_inundacao_5,mancha_inundacao_5,Mancha de Inundação - 5 anos,31983
+geoportal:marco,marco,Marco Geodésico,31983
+geoportal:massa_d_agua,massa_d_agua,Massa Dágua,31983
+geoportal:memoria_verdade,memoria_verdade,Memória e Verdade,31983
+geoportal:obra_arte,obra_arte,Obras de Arte,31983
+geoportal:obra_drenagem_planejada,obra_drenagem_planejada,Obras de drenagem urbana previstas – Lei 18.081/24 (Quadro 6),31983
+geoportal:operacao_urbana,operacao_urbana,Operação Urbana,31983
+geoportal:oucbt_compartimento_ambiental,oucbt_compartimento_ambiental,OUCBT - Compartimento Ambiental,31983
+geoportal:oucbt_melhoramento_viario,oucbt_melhoramento_viario,OUCBT - Melhoramentos Viários,31983
+geoportal:oucbt_parametro_urbanistico_eixo,oucbt_parametro_urbanistico_eixo,OUCBT - Parâmetros Urbanísticos - eixos,31983
+geoportal:oucbt_parametro_urbanistico_quadra,oucbt_parametro_urbanistico_quadra,OUCBT - Parâmetros Urbanísticos - quadras,31983
+geoportal:oucbt_perimetro,oucbt_perimetro,OUCBT - Perímetros,31983
+geoportal:oucbt_sistema_area_verde_equipamento,oucbt_sistema_area_verde_equipamento,OUCBT - Sistemas de áreas verdes e equipamentos,31983
+geoportal:oucbt_sistema_mobilidade,oucbt_sistema_mobilidade,OUCBT - Sistema de Mobilidade,31983
+geoportal:oucfl_area_influencia,oucfl_area_influencia,Áreas de influência OUC Faria Lima,31983
+geoportal:outorga_onerosa,outorga_onerosa,Outorga Onerosa,31983
+geoportal:papeleira,papeleira,Papeleira,31983
+geoportal:passagem,passagem,Passagem - PS,31983
+geoportal:patio_compostagem,patio_compostagem,Pátio de Compostagem,31983
+geoportal:patrimonio_cultural_acervo_tombado,patrimonio_cultural_acervo_tombado,Acervo Tombado,31983
+geoportal:patrimonio_cultural_area_arqueologica,patrimonio_cultural_area_arqueologica,Áreas de Interesse Arqueológico,31983
+geoportal:patrimonio_cultural_area_envoltoria_CONDEPHAAT,patrimonio_cultural_area_envoltoria_CONDEPHAAT,Área Envoltória CONDEPHAAT,31983
+geoportal:patrimonio_cultural_area_envoltoria_CONPRESP,patrimonio_cultural_area_envoltoria_CONPRESP,Área Envoltória CONPRESP,31983
+geoportal:patrimonio_cultural_area_envoltoria_IPHAN,patrimonio_cultural_area_envoltoria_IPHAN,Área Envoltória IPHAN,31983
+geoportal:patrimonio_cultural_bairro_ambiental,patrimonio_cultural_bairro_ambiental,Bairro Ambiental,31983
+geoportal:patrimonio_cultural_bem_arqueologico,patrimonio_cultural_bem_arqueologico,Bens de Interesse Arqueológico,31983
+geoportal:patrimonio_cultural_bem_registrado,patrimonio_cultural_bem_registrado,Bem Registrado,31983
+geoportal:patrimonio_cultural_bem_tombado,patrimonio_cultural_bem_tombado,Bem Tombado,31983
+geoportal:patrimonio_cultural_lugar_paisagistico_ambiental,patrimonio_cultural_lugar_paisagistico_ambiental,Lugar de Interesse Paisagístico Ambiental,31983
+geoportal:patrimonio_cultural_memoria_paulistana,patrimonio_cultural_memoria_paulistana,Inventário Memória Paulistana,31983
+geoportal:patrimonio_cultural_monumento,patrimonio_cultural_monumento,Monumentos,31983
+geoportal:patrimonio_cultural_ocorrencia_arqueologica,patrimonio_cultural_ocorrencia_arqueologica,Ocorrências Arqueológicas,31983
+geoportal:patrimonio_cultural_selo_valor_cultural,patrimonio_cultural_selo_valor_cultural,Selo de Valor Cultural,31983
+geoportal:patrimonio_cultural_sitio_arqueologico,patrimonio_cultural_sitio_arqueologico,Sítios Arqueológicos,31983
+geoportal:pde2014_v_eetr_03_map,pde2014_v_eetr_03_map,Eixos de Estruturação da Transformação Urbana (3),31983
+geoportal:pde2014_v_eixo_prv_03a_map,pde2014_v_eixo_prv_03a_map,Eixos Previstos (3A),31983
+geoportal:pde2014_v_maem_02a_map,pde2014_v_maem_02a_map,Setores da Macroárea de Estruturação Metropolitana (2A),31983
+geoportal:pde2014_v_mcrar_02_map,pde2014_v_mcrar_02_map,Macroárea (2 – Substituído),31983
+geoportal:pde2014_v_mcrz_01_map,pde2014_v_mcrz_01_map,Macrozona (1),31983
+geoportal:pde2014_v_parq_pde_map,pde2014_v_parq_pde_map,Áreas Verdes (5),31983
+geoportal:pde2014_v_prmr_ict_11_map,pde2014_v_prmr_ict_11_map,Perímetro de Incentivo (11),31983
+geoportal:pde2014_v_zeis_04_map,pde2014_v_zeis_04_map,ZEIS 1 (4),31983
+geoportal:pde2014_v_zeis_04a_map,pde2014_v_zeis_04a_map,ZEIS 2-3-4-5 (4A),31983
+geoportal:pde2014_v_zu_zr_01a_map,pde2014_v_zu_zr_01a_map,Urbano e Rural (1A),31983
+geoportal:pde_abastecimento_equipamento_sistema_isolado,pde_abastecimento_equipamento_sistema_isolado,Abastecimento - Equipamentos e Sistemas Isolados (Mapa 6),31983
+geoportal:pde_area_protecao_ambiental_apa,pde_area_protecao_ambiental_apa,Área de Proteção Ambiental (APA) Proposta (Mapa 5),31983
+geoportal:pde_drenagem_acao_prioritaria_linear,pde_drenagem_acao_prioritaria_linear,Sistema de Drenagem - Ações prioritárias lineares (Mapa 12),31983
+geoportal:pde_drenagem_acao_prioritaria_pontual,pde_drenagem_acao_prioritaria_pontual,Sistema de Drenagem - Ações prioritárias pontuais (Mapa 12),31983
+geoportal:pde_esgotamento_estacao_tratamento_sistema_isolado,pde_esgotamento_estacao_tratamento_sistema_isolado,Esgotamento - Estações de Tratamento e Sistemas Isolados (Mapa 7),31983
+geoportal:pde_estrategia_desenvolvimento_economico,pde_estrategia_desenvolvimento_economico,Estratégias de Desenvolvimento Econômico,31983
+geoportal:pde_fator_planejamento_nao_residencial,pde_fator_planejamento_nao_residencial,Fator de planejamento - Não Residencial (Quadro 6),31983
+geoportal:pde_fator_planejamento_residencial,pde_fator_planejamento_residencial,Fator de planejamento - Residencial (Quadro 6),31983
+geoportal:pde_intervencao_pontual_melhoramento_viario,pde_intervencao_pontual_melhoramento_viario,Intervenções pontuais de melhoramento viário (Mapa 8),31983
+geoportal:pde_macroarea_lei_18209,pde_macroarea_lei_18209,Macroárea (2) – Lei 18.209/24,31983
+geoportal:pde_outra_unidade_conservacao,pde_outra_unidade_conservacao,Outras Unidades de Conservação (Mapa 5),31983
+geoportal:pde_parque_municipal,pde_parque_municipal,Parques Municipais (Mapa 5),31983
+geoportal:pde_territorio_interesse_cultura_paisagem,pde_territorio_interesse_cultura_paisagem,Território de Interesse da Cultura e da Paisagem,31983
+geoportal:pde_transporte_estacao_terminal,pde_transporte_estacao_terminal,Transporte público coletivo - Estações e Terminais (Mapa 9),31983
+geoportal:pde_transporte_linha,pde_transporte_linha,Transporte público coletivo - linhas (Mapa 9),31983
+geoportal:pde_viario_estrutural,pde_viario_estrutural,Viário Estrutural (Mapa 8),31983
+geoportal:perimetro_aiu,perimetro_aiu,Perímetros AIU,31983
+geoportal:perimetro_especial_aiu,perimetro_especial_aiu,Perímetros Especiais (8),31983
+geoportal:perimetro_tpc_aiu,perimetro_tpc_aiu,Áreas de recepção da Transferência do Potencial Construtivo (9),31983
+geoportal:perimetro_zona_lei_18081_24,perimetro_zona_lei_18081_24,Perímetro de Zonas – Lei 18.081 (mapa 1),31983
+geoportal:perimetro_zona_lei_18177_24,perimetro_zona_lei_18177_24,Perímetro de Zonas – Lei 18.177 (mapa 1),31983
+geoportal:perimetro_zoneamento_revogado_lei13885,perimetro_zoneamento_revogado_lei13885,Perímetro Zona de Uso - Revogado - Lei 13.885/04,31983
+geoportal:plano_acao_regional,plano_acao_regional,Perímetro de Ação Regional,31983
+geoportal:plano_diretor_drenagem,plano_diretor_drenagem,Plano Diretor de Drenagem,31983
+geoportal:plano_macro_regional,plano_macro_regional,Perímetro de Ação Macrorregional,31983
+geoportal:planta_dup_dis_pd,planta_dup_dis_pd,Plantas DUP DIS,31983
+geoportal:planta_expropriatoria_indireta_pd,planta_expropriatoria_indireta_pd,Plantas Expropriatórias Indiretas,31983
+geoportal:planta_expropriatoria_pd,planta_expropriatoria_pd,Plantas Expropriatórias,31983
+geoportal:pluviometro,pluviometro,Pluviômetros,31983
+geoportal:ponto_cotado,ponto_cotado,Ponto Cotado,31983
+geoportal:ponto_entrega_voluntaria,ponto_entrega_voluntaria,Ponto de Entrega Voluntária (PEV),31983
+geoportal:ponto_intervia,ponto_intervia,Ponto Intervia,31983
+geoportal:ponto_onibus,ponto_onibus,Pontos de ônibus,31983
+geoportal:ponto_revitalizado,ponto_revitalizado,Ponto Revitalizado,31983
+geoportal:pot_redencao,pot_redencao,POT Redenção,31983
+geoportal:potencial_infiltracao,potencial_infiltracao,Potencial de Infiltração,31983
+geoportal:proprio_municipal,proprio_municipal,Próprio Municipal,31983
+geoportal:quadra_fiscal,quadra_fiscal,Quadra,31983
+geoportal:quadra_perimetro_aiu,quadra_perimetro_aiu,Quadras do perímetro de adesão e perímetro expandido (2),31983
+geoportal:quadra_viaria_editada,quadra_viaria_editada,Quadra Viária,31983
+geoportal:quadricula_carta_vegetacao_1985,quadricula_carta_vegetacao_1985,Mapeamento 1985 - Vegetação,31983
+geoportal:quadricula_folha_mds,quadricula_folha_mds,Índice do MDS 2017,31983
+geoportal:quadricula_folha_mdt_mds_2020,quadricula_folha_mdt_mds_2020,Índice do MDT/MDS 2020,31983
+geoportal:quadricula_foto_aerea_1940,quadricula_foto_aerea_1940,Índice das Fotos Aéreas de 1940,31983
+geoportal:quadricula_foto_aerea_1954,quadricula_foto_aerea_1954,Índice das Fotos Aéreas de 1954,31983
+geoportal:quadricula_foto_aerea_1996_1994,quadricula_foto_aerea_1996_1994,Índice das Fotos Aéreas de 1996/1994,31983
+geoportal:quadricula_foto_aerea_2000,quadricula_foto_aerea_2000,Índice das Fotos Aéreas de 2000,31983
+geoportal:quadricula_foto_aerea_2001,quadricula_foto_aerea_2001,Índice das Fotos Aéreas de 2001,31983
+geoportal:quadricula_foto_aerea_2004_E1000,quadricula_foto_aerea_2004_E1000,Índice das Fotos Aéreas de 2004 - escala 1:1000,31983
+geoportal:quadricula_foto_aerea_2004_E5000,quadricula_foto_aerea_2004_E5000,Índice das Fotos Aéreas de 2004 - escala 1:5000,31983
+geoportal:quadricula_foto_aerea_2017,quadricula_foto_aerea_2017,Índice das Fotos Aéreas de 2017,31983
+geoportal:quadricula_orto_2001,quadricula_orto_2001,Índice das Ortofotos 2001,31983
+geoportal:quadricula_orto_2004_E1000,quadricula_orto_2004_E1000,Índice das Ortofotos 2004 - MDC - escala 1:1000,31983
+geoportal:quadricula_orto_2004_E5000,quadricula_orto_2004_E5000,Índice das Ortofotos 2004 - MDC - escala 1:5000,31983
+geoportal:quadricula_orto_2017,quadricula_orto_2017,Índice das Ortofotos 2017,31983
+geoportal:quadricula_orto_2020,quadricula_orto_2020,Índice das Ortofotos 2020,31983
+geoportal:quadricula_plano_municipalrodoviario_1979,quadricula_plano_municipalrodoviario_1979,Plano Municipal Rodoviário 1979,31983
+geoportal:quadricula_planta_historica,quadricula_planta_historica,Mapas e Plantas Históricas,31983
+geoportal:quadricula_SARA_1930_E1000,quadricula_SARA_1930_E1000,Índice SARA Brasil em 1930 - escala 1:1000,31983
+geoportal:quadricula_SARA_1930_E20000,quadricula_SARA_1930_E20000,Índice SARA Brasil em 1930 - escala 1:20000,31983
+geoportal:quadricula_SARA_1930_E5000,quadricula_SARA_1930_E5000,Índice SARA Brasil em 1930 - escala 1:5000,31983
+geoportal:quadricula_vasp_cruzeiro,quadricula_vasp_cruzeiro,VASP Cruzeiro em 1954,31983
+geoportal:quadricula_vegetacao_E10000,quadricula_vegetacao_E10000,Publicação 1988 - Vegetação,31983
+geoportal:rede_mobilidade_aiu,rede_mobilidade_aiu,Rede de mobilidade (7),31983
+geoportal:redencao_atende,redencao_atende,ATENDE - Programa Redenção,31983
+geoportal:redencao_hospital_municipal,redencao_hospital_municipal,Hospital Municipal - Programa Redenção,31983
+geoportal:redencao_outro_servico,redencao_outro_servico,Outros Serviços - Programa Redenção,31983
+geoportal:redencao_scp,redencao_scp,Serviço de Cuidados Prolongados - Programa Redenção,31983
+geoportal:redencao_uaa,redencao_uaa,Unidade de Acolhimento Adulto - Programa Redenção,31983
+geoportal:remanescente_pmma,remanescente_pmma,Remanescentes do Bioma Mata Atlântica,31983
+geoportal:represa_nivel_maximo,represa_nivel_maximo,Represa - Nível Máximo,31983
+geoportal:requalifica_centro_perimetro_geral,requalifica_centro_perimetro_geral,Requalifica Centro Perímetro Área Central,31983
+geoportal:reservatorio_amortecimento,reservatorio_amortecimento,Reservatório de Amortecimento - Piscinões,31983
+geoportal:restricao_circulacao_veiculo_mian,restricao_circulacao_veiculo_mian,Restrição à Circulação de Veículos - MIAN,31983
+geoportal:restricao_circulacao_veiculo_zmrc,restricao_circulacao_veiculo_zmrc,Restrição à Circulação de Veículos - ZMRC,31983
+geoportal:restricao_circulacao_veiculo_zmrf,restricao_circulacao_veiculo_zmrf,Restrição à Circulação de Veículos - ZMRF,31983
+geoportal:restricao_geotecnica,restricao_geotecnica,Áreas com restrições geotécnicas,31983
+geoportal:restricao_mirante_santana,restricao_mirante_santana,Estação Meteorológica,31983
+geoportal:risco_hidrologico,risco_hidrologico,Risco Hidrológico,31983
+geoportal:risco_ocorrencia_alagamento,risco_ocorrencia_alagamento,Alagamento,31983
+geoportal:risco_ocorrencia_deslizamento,risco_ocorrencia_deslizamento,Deslizamento,31983
+geoportal:risco_ocorrencia_inundacao,risco_ocorrencia_inundacao,Inundação,31983
+geoportal:risco_ocorrencia_queda_arvore,risco_ocorrencia_queda_arvore,Queda de árvore,31983
+geoportal:risco_ocorrencia_risco_deslizamento,risco_ocorrencia_risco_deslizamento,Risco de Deslizamento,31983
+geoportal:sac_alteracao_itinerario_ponto_inicial_final,sac_alteracao_itinerario_ponto_inicial_final,Ônibus - Alteração de itinerário ou ponto inicial/final,31983
+geoportal:sac_ausencia_coleta_conteiner_coleta_seletiva,sac_ausencia_coleta_conteiner_coleta_seletiva,Ausência de coleta do contêiner para coleta seletiva,31983
+geoportal:sac_avaliacao_animal_sofrimento_eutanasia,sac_avaliacao_animal_sofrimento_eutanasia,Avaliação de animal em sofrimento sem proprietário para eutanásia (morte sem dor),31983
+geoportal:sac_avaliacao_local_pernilongo_mosquito,sac_avaliacao_local_pernilongo_mosquito,Solicitar avaliação de local com pernilongo/mosquito,31983
+geoportal:sac_aviso_animal_agressor_via_publica,sac_aviso_animal_agressor_via_publica,Avisar sobre animal agressor em vias públicas,31983
+geoportal:sac_aviso_animal_encontrado,sac_aviso_animal_encontrado,Avisar  sobre animal encontrado com Registro Geral do Animal (RGA),31983
+geoportal:sac_capinacao_guia_sarjeta,sac_capinacao_guia_sarjeta,Capinação em guias e sarjetas,31983
+geoportal:sac_cata_bagulho,sac_cata_bagulho,Cata Bagulho - Reclamação de não retirada de material,31983
+geoportal:sac_comunicacao_colisao_veiculo_atende,sac_comunicacao_colisao_veiculo_atende,ATENDE - Comunicação sobre colisão de veículo do ATENDE,31983
+geoportal:sac_comunicacao_erro_cobranca_integracao,sac_comunicacao_erro_cobranca_integracao,Comunicação de erro em cobrança de integração (ônibus e metrô ou trem),31983
+geoportal:sac_comunicacao_problema_posto_recarga_bilhete_unico,sac_comunicacao_problema_posto_recarga_bilhete_unico,Comunicação de problema em posto de recarga,31983
+geoportal:sac_comunicacao_venda_credito_clandestino,sac_comunicacao_venda_credito_clandestino,Comunicação de ponto de venda de crédito clandestino,31983
+geoportal:sac_conserto_lixeira,sac_conserto_lixeira,Conserto de lixeira,31983
+geoportal:sac_conteiner,sac_conteiner,Instalação de contêiner para coleta de lixo domiciliar,31983
+geoportal:sac_criacao_partida_horario_especifico,sac_criacao_partida_horario_especifico,Criação de partida em horário específico,31983
+geoportal:sac_criacao_reativacao_linha_onibus,sac_criacao_reativacao_linha_onibus,Criação/reativação de linha de ônibus,31983
+geoportal:sac_denuncia_alteracao_itinerario_ponto_inicial_final,sac_denuncia_alteracao_itinerario_ponto_inicial_final,Ônibus - Denúncia de alteração de itinerário ou ponto inicial/final,31983
+geoportal:sac_denuncia_conduta_motorista_cobrador_fiscal_onibus,sac_denuncia_conduta_motorista_cobrador_fiscal_onibus,"Ônibus - Denúncia de conduta do motorista, cobrador ou fiscal",31983
+geoportal:sac_denuncia_direcao_inadequada_perigosa_onibus,sac_denuncia_direcao_inadequada_perigosa_onibus,Ônibus - Denúncia de direção inadequada ou perigosa de veículo,31983
+geoportal:sac_denuncia_ma_conduta_funcionario_limpeza,sac_denuncia_ma_conduta_funcionario_limpeza,Denúncia de má conduta dos funcionários de limpeza,31983
+geoportal:sac_denuncia_ma_conduta_motorista_coletor_limpeza,sac_denuncia_ma_conduta_motorista_coletor_limpeza,Denúncia de má conduta dos funcionários (motoristas /coletores),31983
+geoportal:sac_denuncia_problema_embarque_desembarque_onibus,sac_denuncia_problema_embarque_desembarque_onibus,Ônibus - Denúncia de problemas no embarque/desembarque,31983
+geoportal:sac_denuncia_veiculo_clandestino_nao_credenciado,sac_denuncia_veiculo_clandestino_nao_credenciado,Denúncia de veículo clandestino ou não credenciado,31983
+geoportal:sac_elogio_empresa_onibus,sac_elogio_empresa_onibus,Elogio à empresa de ônibus,31983
+geoportal:sac_elogio_motorista_cobrador_fiscal_onibus,sac_elogio_motorista_cobrador_fiscal_onibus,"Ônibus - Elogio ao motorista, cobrador ou fiscal",31983
+geoportal:sac_erosao_urgencia,sac_erosao_urgencia,Erosão,31983
+geoportal:sac_explosao_urgencia,sac_explosao_urgencia,Explosão,31983
+geoportal:sac_falha_recarga_bilhete_unico,sac_falha_recarga_bilhete_unico,Bilhete Único - Falha na recarga,31983
+geoportal:sac_falta_varricao,sac_falta_varricao,Reclamação de falta de varrição,31983
+geoportal:sac_implantacao_abrigo_ponto_onibus,sac_implantacao_abrigo_ponto_onibus,Implantação de abrigo ou ponto de ônibus,31983
+geoportal:sac_implantacao_coleta_porta_porta,sac_implantacao_coleta_porta_porta,Implantação de coleta porta-porta,31983
+geoportal:sac_inclusao_veiculo_adaptado_linha,sac_inclusao_veiculo_adaptado_linha,Inclusão de veículo adaptado na linha,31983
+geoportal:sac_instalacao_conteiner_coleta_seletiva,sac_instalacao_conteiner_coleta_seletiva,Instalação de contêiner para coleta seletiva,31983
+geoportal:sac_intervalo_excessivo_onibus,sac_intervalo_excessivo_onibus,Ônibus - Reclamação de intervalo excessivo da linha,31983
+geoportal:sac_lavagem_especial,sac_lavagem_especial,Lavagem especial de locais públicos,31983
+geoportal:sac_limpeza_bueiro,sac_limpeza_bueiro,"Limpeza de bueiros, boca de lobo e poços de visita",31983
+geoportal:sac_limpeza_enchente_evento,sac_limpeza_enchente_evento,Limpeza da via pública após enchentes ou eventos,31983
+geoportal:sac_limpeza_manutencao_monumento_publico,sac_limpeza_manutencao_monumento_publico,Limpeza e conservação de monumentos públicos,31983
+geoportal:sac_limpeza_onibus,sac_limpeza_onibus,Limpeza do ônibus,31983
+geoportal:sac_manutencao_conserto_limpeza_ponto_onibus,sac_manutencao_conserto_limpeza_ponto_onibus,"Manutenção, conserto e limpeza de ponto de ônibus",31983
+geoportal:sac_manutencao_conteiner_residuo_servico_saude,sac_manutencao_conteiner_residuo_servico_saude,Manutenção de contêiner de resíduos do serviço de saúde,31983
+geoportal:sac_manutencao_veiculo_geral,sac_manutencao_veiculo_geral,Ônibus - Manutenção do veículo em geral,31983
+geoportal:sac_painel_mensagem_variavel,sac_painel_mensagem_variavel,Painel de mensagens variáveis (PMV),31983
+geoportal:sac_pintura_guia_poste,sac_pintura_guia_poste,Pintura de guias e postes,31983
+geoportal:sac_placa_transito,sac_placa_transito,Manutenção de placas de trânsito,31983
+geoportal:sac_quadra_arvore_urgencia,sac_quadra_arvore_urgencia,Queda de árvore,31983
+geoportal:sac_quadra_galho_urgencia,sac_quadra_galho_urgencia,Queda de galho,31983
+geoportal:sac_reativacao_abrigo_ponto_extinto,sac_reativacao_abrigo_ponto_extinto,Reativação de um abrigo ou ponto que foi extinto,31983
+geoportal:sac_reclamacao_coleta_lixo_domiciliar,sac_reclamacao_coleta_lixo_domiciliar,Reclamações sobre coleta de lixo domiciliar,31983
+geoportal:sac_reclamacao_coleta_residuo_servico_saude,sac_reclamacao_coleta_residuo_servico_saude,Reclamações sobre coleta de resíduos de serviços de saúde,31983
+geoportal:sac_reclamacao_coleta_seletiva,sac_reclamacao_coleta_seletiva,Reclamações sobre coleta seletiva,31983
+geoportal:sac_reclamacao_conduta_motorista_atende,sac_reclamacao_conduta_motorista_atende,Reclamação de conduta de motorista do ATENDE,31983
+geoportal:sac_reclamacao_demora_partida_onibus,sac_reclamacao_demora_partida_onibus,Ônibus - Reclamação de demora na partida,31983
+geoportal:sac_reclamacao_descumprimento_horario_veiculo_adaptado,sac_reclamacao_descumprimento_horario_veiculo_adaptado,Reclamação de descumprimento de horário de veículos adaptados,31983
+geoportal:sac_reclamacao_descumprimento_partida_ponto_inicial_final_oni,sac_reclamacao_descumprimento_partida_ponto_inicial_final_oni,Ônibus - Reclamação de descumprimento de partida no ponto inicial/final,31983
+geoportal:sac_reclamacao_falta_comunicacao_onibus,sac_reclamacao_falta_comunicacao_onibus,Reclamação de falta de comunicado nos ônibus,31983
+geoportal:sac_reclamacao_falta_lavagem_calcadao,sac_reclamacao_falta_lavagem_calcadao,Reclamação de falta de lavagem de calçadões,31983
+geoportal:sac_reclamacao_falta_limpeza_ruas_feira,sac_reclamacao_falta_limpeza_ruas_feira,Reclamação de falta de limpeza de ruas após a feira,31983
+geoportal:sac_reclamacao_falta_limpeza_terminal_onibus,sac_reclamacao_falta_limpeza_terminal_onibus,Reclamação de falta de limpeza de terminais de ônibus,31983
+geoportal:sac_reclamacao_fila_tumulto_terminal_onibus,sac_reclamacao_fila_tumulto_terminal_onibus,Reclamação de filas e tumulto em terminais de ônibus,31983
+geoportal:sac_reclamacao_problema_olho_vivo,sac_reclamacao_problema_olho_vivo,Reclamação de problemas no olho vivo,31983
+geoportal:sac_reclamacao_sinalizacao_inadequada_terminal_onibus,sac_reclamacao_sinalizacao_inadequada_terminal_onibus,Reclamação de sinalização inadequada de terminais de ônibus,31983
+geoportal:sac_reclamacao_veiculo_superlotacao_onibus,sac_reclamacao_veiculo_superlotacao_onibus,Ônibus - Reclamação de veículo com superlotação,31983
+geoportal:sac_reclamar_local_com_morcego,sac_reclamar_local_com_morcego,Morcego - Reclamar sobre local com morcego,31983
+geoportal:sac_reformar_galeria_agua_chuva_pluvial,sac_reformar_galeria_agua_chuva_pluvial,Reformar galerias de águas de chuvas (pluviais),31983
+geoportal:sac_reimplantacao_substituicao_ponto_onibus_antigo_novo,sac_reimplantacao_substituicao_ponto_onibus_antigo_novo,Reimplantação ou substituição de um ponto de ônibus do modelo antigo por um equipamento do modelo novo,31983
+geoportal:sac_remanejamento_ponto_onibus,sac_remanejamento_ponto_onibus,Remanejamento de ponto de ônibus,31983
+geoportal:sac_remocao_animal,sac_remocao_animal,Remoção de animal morto em via pública,31983
+geoportal:sac_remocao_animal_grande_porte_solto,sac_remocao_animal_grande_porte_solto,Animal de grande porte solto - Solicitar remoção,31983
+geoportal:sac_remocao_conteiner_coleta_lixo_domiciliar,sac_remocao_conteiner_coleta_lixo_domiciliar,Remoção de contêiner para coleta de lixo domiciliar,31983
+geoportal:sac_remocao_conteiner_coleta_seletiva,sac_remocao_conteiner_coleta_seletiva,Remoção do contêiner de coleta seletiva,31983
+geoportal:sac_remocao_entulho,sac_remocao_entulho,Remoção de entulho em via pública,31983
+geoportal:sac_remocao_grande_objeto,sac_remocao_grande_objeto,Remoção de grandes objetos em vias públicas,31983
+geoportal:sac_remocao_lixeira,sac_remocao_lixeira,Instalação e remoção de lixeira,31983
+geoportal:sac_remocao_saco_varricao,sac_remocao_saco_varricao,Reclamação de não remoção dos sacos de varrição,31983
+geoportal:sac_reparo_catraca_eletronica_validador_falha,sac_reparo_catraca_eletronica_validador_falha,Reparo de catraca eletronica/ validador com falha,31983
+geoportal:sac_reparo_manutencao_relogio_rua,sac_reparo_manutencao_relogio_rua,Reparo e manutenção de relógios de rua,31983
+geoportal:sac_reparo_problema_mecanico_transito_transporte,sac_reparo_problema_mecanico_transito_transporte,Reparo de problemas mecânicos,31983
+geoportal:sac_rompimento_galeria_agua_pluvial,sac_rompimento_galeria_agua_pluvial,Rompimento de galeria de águas pluviais,31983
+geoportal:sac_selo_identificacao_estabelecimento_gerador_residuo,sac_selo_identificacao_estabelecimento_gerador_residuo,Selo de identificação de estabelecimento gerador de resíduos de saúde – 1ª e 2ª via,31983
+geoportal:sac_sinalizacao_horizontal_apagada_repintura,sac_sinalizacao_horizontal_apagada_repintura,Sinalização horizontal apagada (pintura de solo) – Solicitar repintura,31983
+geoportal:sac_solicitacao_avaliacao_ciclofaixa_lazer,sac_solicitacao_avaliacao_ciclofaixa_lazer,Ciclofaixas de lazer - Solicitar avaliação,31983
+geoportal:sac_solicitacao_avaliacao_infraestrutura_ciclovia,sac_solicitacao_avaliacao_infraestrutura_ciclovia,"Ciclovias, ciclofaixas e ciclorrotas - Solicitar avaliação da infraestrutura",31983
+geoportal:sac_solicitacao_manutencao_conteiner_coleta_seletiva,sac_solicitacao_manutencao_conteiner_coleta_seletiva,Coleta seletiva - Solicitar manutenção de contêiner,31983
+geoportal:sac_solicitacao_manutencao_sinalizacao_pintura_ciclofaixa,sac_solicitacao_manutencao_sinalizacao_pintura_ciclofaixa,"Ciclovias, ciclofaixas e ciclorrotas - solicitar manutenção da sinalização e pintura",31983
+geoportal:sac_sugestao_elogio_olho_vivo,sac_sugestao_elogio_olho_vivo,Olho Vivo - Sugestão e elogio,31983
+geoportal:sac_sugestao_implantacao_ciclovia_ciclofaixa,sac_sugestao_implantacao_ciclovia_ciclofaixa,"Ciclovias, ciclofaixas e ciclorrotas - Sugerir implantação",31983
+geoportal:sac_sugestao_obra_drenagem_corrego,sac_sugestao_obra_drenagem_corrego,Sugerir obras de drenagem em córregos,31983
+geoportal:sac_sugestao_sptrans,sac_sugestao_sptrans,SPTrans - Sugestão,31983
+geoportal:sac_tapa_buraco,sac_tapa_buraco,Tapa-buraco,31983
+geoportal:sac_tapa_buraco_faixa_corredor,sac_tapa_buraco_faixa_corredor,Tapa-buraco em faixa exclusiva ou corredor de ônibus,31983
+geoportal:sac_veiculo_local_proibido,sac_veiculo_local_proibido,Fiscalização de veículo estacionado em local proibido,31983
+geoportal:sac_vistoria_colmeia_vespeiro_instalado,sac_vistoria_colmeia_vespeiro_instalado,Vistoria de colmeia/vespeiro instalado,31983
+geoportal:sac_vistoria_reparo_ponte_viaduto,sac_vistoria_reparo_ponte_viaduto,Vistoria e reparo de pontes e viadutos,31983
+geoportal:seccional_policia_civil,seccional_policia_civil,Limite das Seccionais da Polícia Civil,31983
+geoportal:sede_subprefeitura,sede_subprefeitura,Subprefeituras,31983
+geoportal:segmento_logradouro,segmento_logradouro,Logradouro,31983
+geoportal:seguranca_alimentar,seguranca_alimentar,Seguranca Alimentar,31983
+geoportal:semaforo,semaforo,Cruzamentos Semaforizados,31983
+geoportal:servico_assistencia_social_familia,servico_assistencia_social_familia,Serviço de Assistência Social à Família,31983
+geoportal:servico_divisivel_agrupamento,servico_divisivel_agrupamento,Agrupamento Serviços Divisíveis,31983
+geoportal:servico_especializado_abordagem_social,servico_especializado_abordagem_social,Serviço Especializado de Abordagem Social,31983
+geoportal:servico_medida_socioeducativa,servico_medida_socioeducativa,Serviço de Medida Socioeducativa em Meio Aberto,31983
+geoportal:servico_varricao_lote_amlurb,servico_varricao_lote_amlurb,Serviços de Varrição e Limpeza Pública,31983
+geoportal:setor_censitario_2022,setor_censitario_2022,Setor Censitário 2022,31983
+geoportal:setor_educacional,setor_educacional,Setores Educacionais,31983
+geoportal:setor_fiscal,setor_fiscal,Setor,31983
+geoportal:siat_ii,siat_ii,SIAT II,31983
+geoportal:siat_iii,siat_iii,SIAT III,31983
+geoportal:siat_perimetro_abordagem,siat_perimetro_abordagem,Perímetros de Abordagem,31983
+geoportal:solo_mole,solo_mole,Solo Mole (Carta Geotécnica),31983
+geoportal:subprefeitura,subprefeitura,Subprefeituras,31983
+geoportal:subsetor_operacao_urbana,subsetor_operacao_urbana,subsetor_operacao_urbana,31983
+geoportal:subvencao_economica,subvencao_economica,Subvenção Econômica,31983
+geoportal:terminal_onibus,terminal_onibus,Terminal de Ônibus,31983
+geoportal:torre_alta_tensao,torre_alta_tensao,Torre de Alta Tensão,31983
+geoportal:transpetro_duto,transpetro_duto,Rede de transporte de óleo e gás - Transpetro - Dutos,31983
+geoportal:transpetro_marco,transpetro_marco,Rede de transporte de óleo e gás - Transpetro - Marco,31983
+geoportal:tratamento_residuo_solido_saude,tratamento_residuo_solido_saude,Resíduos de Serviços de Saúde,31983
+geoportal:turismo,turismo,Turismo,31983
+geoportal:unidade_comdec,unidade_comdec,Defesa Civil,31983
+geoportal:unidade_produtiva_rural,unidade_produtiva_rural,Unidade de Produção Agropecuária,31983
+geoportal:uso_predominante_solo_2014_60,uso_predominante_solo_2014_60,Uso predominante do solo maior ou igual a 60% por quadra fiscal 2014,31983
+geoportal:uso_predominante_solo_2014_simples,uso_predominante_solo_2014_simples,Uso predominante do solo simples por quadra fiscal 2014,31983
+geoportal:uso_predominante_solo_2018_60,uso_predominante_solo_2018_60,Uso predominante do solo maior ou igual a 60% por quadra fiscal 2018,31983
+geoportal:uso_predominante_solo_2018_simples,uso_predominante_solo_2018_simples,Uso predominante do solo simples por quadra fiscal 2018,31983
+geoportal:uso_predominante_solo_2021_60,uso_predominante_solo_2021_60,Uso predominante do solo maior ou igual a 60% por quadra fiscal 2021,31983
+geoportal:uso_predominante_solo_2021_simples,uso_predominante_solo_2021_simples,Uso predominante do solo simples por quadra fiscal 2021,31983
+geoportal:vaga_especial,vaga_especial,Vagas Especiais,31983
+geoportal:velorio,velorio,Velório,31983
+geoportal:via_bicicleta,via_bicicleta,Rede cicloviária,31983
+geoportal:zeis_revogada,zeis_revogada,ZEIS (Zona Especial de Interesse Social) - Revogado - Lei 13.885/04,31983
+geoportal:zona_azul,zona_azul,Zona Azul,31983
+geoportal:zona_especial_preservacao_cultural_apc,zona_especial_preservacao_cultural_apc,ZEPEC-APC,31983
+geoportal:zona_fiscal,zona_fiscal,Zona Fiscal,31983
+geoportal:zona_ocupacao_especial_aiu,zona_ocupacao_especial_aiu,Zonas de Ocupação Especial (ZOE) - AIU SCE (3),31983
+geoportal:zona_origem_destino,zona_origem_destino,Zona Origem-Destino,31983
+geoportal:zoneamento_2016_map1,zoneamento_2016_map1,Perímetros das Zonas (1),31983
+geoportal:zoneamento_classificacao_viaria,zoneamento_classificacao_viaria,Classificação Viária - Revogado - Lei 13.885/04,31983
+geoportal:zoneamento_corredor_uso,zoneamento_corredor_uso,Zona de Centralidade Linear - Revogado - Lei 13.885/04,31983

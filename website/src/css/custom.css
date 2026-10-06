@@ -1,0 +1,122 @@
+/* Tokens: paleta de referência da skill dataviz (validada). Escuro = passos próprios, não inversão. */
+:root {
+  --ifm-color-primary: #1c5cab;
+  --ifm-color-primary-dark: #1a54a0;
+  --ifm-color-primary-darker: #184f95;
+  --ifm-color-primary-darkest: #104281;
+  --ifm-color-primary-light: #256abf;
+  --ifm-color-primary-lighter: #2a78d6;
+  --ifm-color-primary-lightest: #3987e5;
+  --ifm-code-font-size: 92%;
+  --ifm-background-color: #f9f9f7;
+
+  --viz-surface: #fcfcfb;
+  --viz-ink: #0b0b0b;
+  --viz-ink-2: #52514e;
+  --viz-muted: #898781;
+  --viz-grid: #e1e0d9;
+  --viz-axis: #c3c2b7;
+  --viz-border: rgba(11, 11, 11, 0.1);
+  --viz-good: #006300;
+  --series-1: #2a78d6;
+  --series-2: #eb6834;
+  --series-3: #1baf7a;
+  --series-4: #eda100;
+  --series-5: #e87ba4;
+  --series-6: #008300;
+  --series-7: #4a3aa7;
+  --series-8: #e34948;
+  --series-other: #898781;
+  --seq-100: #cde2fb; --seq-200: #9ec5f4; --seq-300: #6da7ec; --seq-400: #3987e5;
+  --seq-500: #256abf; --seq-600: #184f95; --seq-700: #0d366b;
+}
+[data-theme='dark'] {
+  --ifm-color-primary: #6da7ec;
+  --ifm-color-primary-dark: #5598e7;
+  --ifm-color-primary-darker: #3987e5;
+  --ifm-color-primary-darkest: #2a78d6;
+  --ifm-color-primary-light: #86b6ef;
+  --ifm-color-primary-lighter: #9ec5f4;
+  --ifm-color-primary-lightest: #b7d3f6;
+  --ifm-background-color: #0d0d0d;
+
+  --viz-surface: #1a1a19;
+  --viz-ink: #ffffff;
+  --viz-ink-2: #c3c2b7;
+  --viz-muted: #898781;
+  --viz-grid: #2c2c2a;
+  --viz-axis: #383835;
+  --viz-border: rgba(255, 255, 255, 0.1);
+  --viz-good: #0ca30c;
+  --series-1: #3987e5;
+  --series-2: #d95926;
+  --series-3: #199e70;
+  --series-4: #c98500;
+  --series-5: #d55181;
+  --series-6: #008300;
+  --series-7: #9085e9;
+  --series-8: #e66767;
+  /* sequencial no escuro: claro = muito, escuro = pouco, para o mapa continuar legível sobre fundo escuro */
+  --seq-100: #184f95; --seq-200: #1c5cab; --seq-300: #2a78d6; --seq-400: #3987e5;
+  --seq-500: #6da7ec; --seq-600: #9ec5f4; --seq-700: #cde2fb;
+}
+
+.hero--home {
+  background: linear-gradient(135deg, #0d366b 0%, #1c5cab 60%, #2a78d6 100%);
+  color: #fff;
+  padding: 3.5rem 0 3rem;
+}
+.hero--home .hero__subtitle { color: #cde2fb; max-width: 46rem; }
+
+/* ---------- componentes de painel ---------- */
+.kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 12px; margin: 1.25rem 0; }
+.kpi { background: var(--viz-surface); border: 1px solid var(--viz-border); border-radius: 12px; padding: 14px 16px; }
+.kpi__label { font-size: 0.78rem; color: var(--viz-ink-2); text-transform: none; }
+.kpi__value { font-size: 1.9rem; font-weight: 650; color: var(--viz-ink); line-height: 1.15; font-variant-numeric: tabular-nums; }
+.kpi__note { font-size: 0.75rem; color: var(--viz-muted); margin-top: 2px; }
+
+.vcard { background: var(--viz-surface); border: 1px solid var(--viz-border); border-radius: 14px; padding: 16px 18px 12px; margin: 1.25rem 0; }
+.vcard__head { display: flex; gap: 12px; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; }
+.vcard__title { margin: 0; font-size: 1.05rem; color: var(--viz-ink); }
+.vcard__sub { margin: 2px 0 0; font-size: 0.85rem; color: var(--viz-ink-2); max-width: 46rem; }
+.vcard__tools { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.vcard__tools select, .vbtn { font: inherit; font-size: 0.8rem; background: var(--viz-surface); color: var(--viz-ink); border: 1px solid var(--viz-axis); border-radius: 8px; padding: 4px 8px; cursor: pointer; }
+.vbtn[aria-pressed='true'] { background: var(--seq-500); color: #fff; border-color: transparent; }
+.vcard__note { font-size: 0.74rem; color: var(--viz-muted); margin: 8px 0 0; }
+.vcard__table { max-height: 340px; overflow: auto; margin-top: 10px; }
+.vcard__table table { font-size: 0.8rem; width: 100%; display: table; }
+.vcard__table th { position: sticky; top: 0; background: var(--viz-surface); }
+
+.vchart { position: relative; width: 100%; }
+.vchart svg { display: block; width: 100%; height: auto; overflow: visible; }
+.vchart text { fill: var(--viz-muted); font-size: 11px; font-family: var(--ifm-font-family-base); }
+.vchart .vlabel { fill: var(--viz-ink-2); }
+.vchart .vgrid { stroke: var(--viz-grid); stroke-width: 1; }
+.vchart .vaxis { stroke: var(--viz-axis); stroke-width: 1; }
+.vtip { position: absolute; pointer-events: none; z-index: 5; background: var(--viz-surface); color: var(--viz-ink); border: 1px solid var(--viz-axis);
+  border-radius: 8px; padding: 6px 9px; font-size: 0.78rem; box-shadow: 0 4px 14px rgba(0,0,0,.18); white-space: nowrap; transform: translate(-50%, -110%); }
+.vtip b { font-weight: 650; }
+.vtip i { display: inline-block; width: 9px; height: 9px; border-radius: 2px; margin-right: 6px; }
+.vlegend { display: flex; flex-wrap: wrap; gap: 6px 14px; margin: 8px 0 2px; font-size: 0.78rem; color: var(--viz-ink-2); }
+.vlegend span { display: inline-flex; align-items: center; gap: 6px; }
+.vlegend i { width: 10px; height: 10px; border-radius: 3px; display: inline-block; }
+.vstatus { padding: 28px 8px; color: var(--viz-ink-2); font-size: 0.9rem; }
+
+.vmap { height: 520px; border-radius: 12px; overflow: hidden; border: 1px solid var(--viz-border); }
+.vmap.leaflet-container { background: var(--viz-surface); font-family: var(--ifm-font-family-base); }
+.vmap .leaflet-control-attribution { background: color-mix(in srgb, var(--viz-surface) 85%, transparent) !important; color: var(--viz-ink-2) !important; }
+.vmap .leaflet-control-attribution a { color: var(--ifm-color-primary) !important; }
+.vscale { display: flex; align-items: center; gap: 8px; font-size: 0.75rem; color: var(--viz-ink-2); margin-top: 8px; }
+.vscale__bar { height: 10px; width: 180px; border-radius: 5px; background: linear-gradient(90deg, var(--seq-100), var(--seq-300), var(--seq-500), var(--seq-700)); }
+
+.grid2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 0 18px; }
+.persona-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; margin: 1.5rem 0; }
+.persona { border: 1px solid var(--viz-border); background: var(--viz-surface); border-radius: 14px; padding: 16px 18px; }
+.persona h3 { margin: 0 0 6px; font-size: 1.05rem; }
+.persona p { margin: 0 0 8px; font-size: 0.88rem; color: var(--viz-ink-2); }
+.callout-caveat { border-left: 4px solid var(--series-4); background: var(--viz-surface); padding: 10px 14px; border-radius: 0 10px 10px 0; font-size: 0.88rem; margin: 1rem 0; }
+
+@media (max-width: 600px) {
+  .kpi__value { font-size: 1.55rem; }
+  .vmap { height: 420px; }
+}

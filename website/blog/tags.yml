@@ -1,0 +1,8 @@
+versao:
+  label: Versão
+  permalink: /versao
+  description: Notas de versão dos dados e do site
+sp156:
+  label: SP156
+  permalink: /sp156
+  description: Base de solicitações do SP156
