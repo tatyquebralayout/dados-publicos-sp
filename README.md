@@ -49,6 +49,20 @@ Guia completo: [Executar o pipeline](https://tatyquebralayout.github.io/dados-pu
 - Os mapas mostram contagens, **não taxas por população**.
 - Projeto independente, sem vínculo oficial com a Prefeitura de São Paulo.
 
+## Como os dados se atualizam
+
+Toda segunda-feira às 3h17 (horário de Brasília), o workflow **Atualizar dados do SP156** (`.github/workflows/atualizar-dados.yml`) confere no portal de dados abertos da Prefeitura se saiu arquivo novo do SP156. Se não saiu, ele termina em segundos. Se saiu, ele baixa os dados e as camadas do GeoSampa, roda o pipeline e os testes e, quando tudo passa, abre um pull request só com os arquivos do site. Se algum download falha, a atualização para antes de reconstruir qualquer coisa. O site publica sozinho depois do merge, e os dados brutos nunca entram no repositório.
+
+Para rodar na hora, abra a aba **Actions**, escolha **Atualizar dados do SP156** e clique em **Run workflow**. Ligue a opção `forcar` para reconstruir tudo mesmo sem arquivo novo.
+
+> **Atenção:** em repositório público, o GitHub desliga os agendamentos depois de 60 dias sem commits. Como o SP156 só muda a cada três meses, isso pode acontecer entre um trimestre e outro. Se o workflow aparecer como desativado na aba **Actions**, é só reativar.
+
+Tudo roda nas máquinas padrão e gratuitas do GitHub (`ubuntu-latest`), sem custo.
+
+### How the data stays up to date
+
+*Every Monday at 3:17 a.m. (Brasília time), the **Atualizar dados do SP156** workflow checks São Paulo's open data portal for new SP156 files. If there are any, it downloads them along with the GeoSampa layers, rebuilds the data, runs the tests and opens a pull request with the site files only; raw data never enters the repo. To run it by hand, open the **Actions** tab, pick the workflow and click **Run workflow** (turn on `forcar` to rebuild even with no new files). GitHub disables schedules on public repos after 60 days without commits, so re-enable the workflow there if it shows as disabled. It runs on GitHub's free standard runners.*
+
 ## Licença e dados
 Os dados vêm da Prefeitura de São Paulo (CKAN: Creative Commons CCZero; GeoSampa: sem restrições, conforme os metadados). O código deste repositório está sob a [licença MIT](LICENSE). Os dados seguem a licença da fonte.
 
