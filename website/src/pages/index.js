@@ -13,7 +13,7 @@ const personas = [
 
 export default function Home() {
   return (
-    <Layout description="Painéis com 18,7 milhões de solicitações do SP156 e mapas do GeoSampa, com pipeline aberto em Python e dados que você pode conferir.">
+    <Layout description="Painéis com 18,8 milhões de solicitações do SP156 e mapas do GeoSampa, com pipeline aberto em Python e dados que você pode conferir.">
       <Head>
         <title>Dados públicos de São Paulo · Tatiana Barros</title>
         <meta property="og:title" content="Dados públicos de São Paulo · Tatiana Barros" />
