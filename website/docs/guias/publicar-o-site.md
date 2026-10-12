@@ -12,7 +12,7 @@ O site é um projeto [Docusaurus](https://docusaurus.io) em `website/`, publicad
 ```bash
 cd website
 npm ci
-npm start          # http://localhost:3000/reativacao-abrigos-geosampa/
+npm start          # http://localhost:3000/dados-publicos-sp/
 npm run build      # gera website/build
 npm run serve      # serve o build
 ```
@@ -37,7 +37,7 @@ Ficaram de fora, de propósito, plugins que exigem credenciais ou serviços exte
 ## Publicação no GitHub Pages
 1. No repositório, em **Settings → Pages**, a fonte deve ser **GitHub Actions**.
 2. O workflow `.github/workflows/deploy-site.yml` faz o build e publica.
-3. Endereço: `https://tatyquebralayout.github.io/reativacao-abrigos-geosampa/`.
+3. Endereço: `https://tatyquebralayout.github.io/dados-publicos-sp/`.
 
 Se o repositório mudar de nome, atualize `url`, `baseUrl` e `projectName` em `website/docusaurus.config.js`, e o `start_url`/`scope` de `website/static/manifest.json`.
 
