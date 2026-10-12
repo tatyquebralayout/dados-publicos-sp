@@ -37,10 +37,10 @@ distrito_municipal ─► geo.build(): point-in-polygon sobre coordenadas distin
 | silver | datas/números tipados, coordenadas validadas, particionada por `ano/mes` | 426 MB |
 | gold | mensal×tema×canal, distrito×ano, órgão×ano, grade 500 m, qualidade | 3 MB |
 
-Consulta típica na silver (18,7 M de linhas): 0,03–0,04 s com DuckDB. Memória de pico: ~1 GB na bronze (reprocessamento completo: 1 min 47 s, pois o leitor tolerante a aspas roda sem paralelismo) e na geo; ~4–5 GB na silver (`memory_limit` de 3 GB, que o DuckDB ultrapassa um pouco).
+Consulta típica na silver (18,8 M de linhas): 0,03–0,04 s com DuckDB. Memória de pico: ~1 GB na bronze (reprocessamento completo: 1 min 47 s, pois o leitor tolerante a aspas roda sem paralelismo) e na geo; ~4–5 GB na silver (`memory_limit` de 3 GB, que o DuckDB ultrapassa um pouco).
 
 ### Decisões
-- **Parquet + DuckDB/Polars, sem Spark.** 18,7 M de linhas e 426 MB cabem folgadamente numa máquina.
+- **Parquet + DuckDB/Polars, sem Spark.** 18,8 M de linhas e 426 MB cabem folgadamente numa máquina.
 - **Bronze em texto puro.** Nada é perdido por erro de conversão; a tipagem acontece na silver, onde falhas são mensuráveis.
 - **Sem geopandas.** Pontos e point-in-polygon ficam com a extensão `spatial` do DuckDB, e `pyproj` reprojeta as camadas GeoSampa.
 - **Prazo em dias de calendário** (`prazo_dias` = data de finalização − data de abertura). Os arquivos antigos têm hora e os novos só data, e comparar com hora gerava falsos negativos.
