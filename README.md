@@ -1,12 +1,22 @@
-# Dados Públicos de São Paulo (SP156 e GeoSampa)
+<div align="center">
 
-Pipeline Python, documentação e painéis para dados abertos da Prefeitura de São Paulo:
+# Dados Públicos de São Paulo
+
+**Quase 19 milhões de pedidos feitos à Prefeitura pelo SP156, de 2015 a 2026, tratados, checados e transformados em painéis que qualquer pessoa consegue ler.**
+*Nearly 19 million requests made to São Paulo's city hall through SP156, from 2015 to 2026, cleaned, checked and turned into dashboards anyone can read.*
+
+<a href="https://tatyquebralayout.github.io/dados-publicos-sp/"><img src="preview.webp" width="640" alt="Prévia: o site do projeto rolando, com os totais de solicitações e os caminhos por onde começar · Preview: the project site scrolling, showing request totals and where to start"></a>
+
+### [▶ Ver os painéis · See the dashboards](https://tatyquebralayout.github.io/dados-publicos-sp/)
+
+</div>
+
+## O que tem aqui
 
 - **Base SP156 completa:** 18.774.202 solicitações, 2015T1 a 2026T2 (CKAN do Portal de Dados Abertos).
 - **94 camadas GeoSampa `sac_*`:** 143.461 solicitações, abril a setembro de 2020 (WFS).
-- O projeto nasceu da camada [Reativação de um abrigo ou ponto que foi extinto](https://metadados.geosampa.prefeitura.sp.gov.br/geonetwork/srv/por/catalog.search#/metadata/5703aa4e-e3ca-4284-812a-0d1e2fde09bb).
-
-**Site (painéis e documentação):** https://tatyquebralayout.github.io/dados-publicos-sp/
+- **Um pipeline Python testado** que baixa, limpa, valida e agrega tudo sozinho, com atualização semanal opcional.
+- O projeto nasceu da camada [Reativação de um abrigo ou ponto que foi extinto](https://metadados.geosampa.prefeitura.sp.gov.br/geonetwork/srv/por/catalog.search#/metadata/5703aa4e-e3ca-4284-812a-0d1e2fde09bb), por isso o nome antigo do repositório.
 
 ## Estrutura
 | Pasta | Conteúdo |

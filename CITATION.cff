@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "Se você usar este projeto, cite assim. / If you use this project, please cite it as below."
+title: "Dados Públicos de São Paulo: SP156 e GeoSampa"
+abstract: "Pipeline Python, documentação e painéis para os dados abertos do SP156 (2015 a 2026) e das camadas SAC do GeoSampa, da Prefeitura de São Paulo."
+type: software
+authors:
+  - family-names: Barros
+    given-names: Tatiana
+license: MIT
+repository-code: "https://github.com/tatyquebralayout/dados-publicos-sp"
+url: "https://tatyquebralayout.github.io/dados-publicos-sp/"
+keywords:
+  - dados-abertos
+  - open-data
+  - sao-paulo
+  - sp156
+  - geosampa
+  - dados-publicos
