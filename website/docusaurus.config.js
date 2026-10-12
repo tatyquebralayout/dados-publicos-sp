@@ -3,7 +3,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
 
-const repo = 'https://github.com/tatyquebralayout/reativacao-abrigos-geosampa';
+const repo = 'https://github.com/tatyquebralayout/dados-publicos-sp';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -17,9 +17,9 @@ const config = {
   },
 
   url: 'https://tatyquebralayout.github.io',
-  baseUrl: '/reativacao-abrigos-geosampa/',
+  baseUrl: '/dados-publicos-sp/',
   organizationName: 'tatyquebralayout',
-  projectName: 'reativacao-abrigos-geosampa',
+  projectName: 'dados-publicos-sp',
   trailingSlash: false,
 
   onBrokenLinks: 'throw',

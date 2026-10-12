@@ -13,8 +13,8 @@ description: Do zero ao dado tratado, passo a passo
 
 ## Instalação
 ```bash
-git clone https://github.com/tatyquebralayout/reativacao-abrigos-geosampa.git
-cd reativacao-abrigos-geosampa
+git clone https://github.com/tatyquebralayout/dados-publicos-sp.git
+cd dados-publicos-sp
 python3 -m venv .venv
 .venv/bin/pip install -e '.[dev]'
 .venv/bin/pytest          # 8 testes
