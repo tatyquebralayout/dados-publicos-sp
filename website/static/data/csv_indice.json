@@ -14,7 +14,7 @@
  "canal_ano": {
   "arquivo": "canal_ano.csv",
   "origem": "canal_ano.json",
-  "linhas": 56,
+  "linhas": 55,
   "colunas": [
    "ano",
    "canal",
