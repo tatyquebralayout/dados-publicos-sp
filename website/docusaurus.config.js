@@ -9,7 +9,12 @@ const repo = 'https://github.com/tatyquebralayout/dados-publicos-sp';
 const config = {
   title: 'Dados Públicos de São Paulo',
   tagline: 'SP156 e GeoSampa: 18,8 milhões de solicitações tratadas, documentadas e abertas em painéis',
-  favicon: 'img/logo.svg',
+  favicon: 'favicon.svg',
+
+  headTags: [
+    {tagName: 'link', attributes: {rel: 'icon', href: '/dados-publicos-sp/favicon.ico', sizes: 'any'}},
+    {tagName: 'link', attributes: {rel: 'apple-touch-icon', href: '/dados-publicos-sp/apple-touch-icon.png'}},
+  ],
 
   future: {
     v4: true,
@@ -75,7 +80,7 @@ const config = {
         debug: false,
         offlineModeActivationStrategies: ['appInstalled', 'standalone', 'queryString'],
         pwaHead: [
-          {tagName: 'link', rel: 'icon', href: 'img/logo.svg'},
+          {tagName: 'link', rel: 'icon', href: 'favicon.svg'},
           {tagName: 'link', rel: 'manifest', href: 'manifest.json'},
           {tagName: 'meta', name: 'theme-color', content: '#2a78d6'},
         ],
@@ -116,12 +121,19 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      image: 'img/social-card.svg',
+      image: 'og.png',
+      metadata: [
+        {name: 'author', content: 'Tatiana Barros'},
+        {property: 'og:site_name', content: 'Tatiana Barros'},
+        {property: 'og:image:width', content: '1280'},
+        {property: 'og:image:height', content: '640'},
+        {property: 'og:image:alt', content: 'Dados públicos de São Paulo: painéis do SP156 e do GeoSampa, por Tatiana Barros'},
+      ],
       colorMode: {respectPrefersColorScheme: true},
       zoom: {selector: '.markdown img', background: {light: 'rgb(255,255,255)', dark: 'rgb(26,26,25)'}},
       navbar: {
         title: 'Dados Públicos SP',
-        logo: {alt: 'Dados Públicos SP', src: 'img/logo.svg'},
+        logo: {alt: '', src: 'img/logo.svg', width: 32, height: 32},
         items: [
           {
             type: 'dropdown',

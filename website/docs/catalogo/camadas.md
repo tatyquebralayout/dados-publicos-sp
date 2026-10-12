@@ -33,4 +33,4 @@ SELECT ano, tema, count(*) AS n
 FROM read_parquet('data/silver/sp156/**/*.parquet', hive_partitioning = true)
 GROUP BY ALL ORDER BY ano, n DESC;
 ```
-Uma consulta como esta sobre 18,7 milhões de linhas leva cerca de 0,04 s na máquina de desenvolvimento.
+Uma consulta como esta sobre 18,8 milhões de linhas leva cerca de 0,04 s na máquina de desenvolvimento.

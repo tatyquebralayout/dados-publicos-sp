@@ -13,7 +13,7 @@
   --viz-surface: #fcfcfb;
   --viz-ink: #0b0b0b;
   --viz-ink-2: #52514e;
-  --viz-muted: #898781;
+  --viz-muted: #6f6d68; /* era #898781 (3,5:1); agora ~5:1 no tema claro (WCAG AA) */
   --viz-grid: #e1e0d9;
   --viz-axis: #c3c2b7;
   --viz-border: rgba(11, 11, 11, 0.1);
@@ -120,3 +120,6 @@
   .kpi__value { font-size: 1.55rem; }
   .vmap { height: 420px; }
 }
+
+/* Links dentro de texto corrido precisam se distinguir sem depender só da cor (WCAG 1.4.1) */
+.callout-caveat a { text-decoration: underline; }
