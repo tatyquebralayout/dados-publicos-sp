@@ -22,6 +22,7 @@ Os arquivos públicos do SP156 foram publicados ao longo de onze anos, por pesso
 | 10 | Não há protocolo/ID no arquivo | **sem deduplicação por chave**; só se remove a sobreposição do item 6 |
 | 11 | **Código no lugar do nome do distrito** (2025T2 em diante: 1, 814, 1.247 e 1.250 linhas por trimestre) | tradução por `cd_distrito_municipal` do GeoSampa (coincidência de 100%); sem isso haveria 191 distritos |
 | 12 | **"Data do Parecer" não é a data de finalização antes de 2020** (2015: 100% dos prazos são zero; 2017: mediana de 28 dias) | coluna `prazo_confiavel`: o prazo só é usado de 2020 em diante |
+| 13 | **Temas de teste do sistema** misturados às demandas reais ("tema001 - teste", "TESTE SEI", "Teste Técnico Metasix", "Teste permissionamento do órgão", "teste", "tema002"): 4.695 solicitações de 2020 em diante | excluídos de todos os agregados do site pelo padrão `teste` ou `tema0NN` no nome do tema |
 
 :::caution[Confirme antes de usar o 2021T1]
 A ordem das colunas do layout alternativo do 2021T1 foi **deduzida do conteúdo** (datas, canal, status e CEP caem em posições coerentes), sem confirmação da fonte. Se a sua análise depender desse trimestre, confirme o layout com a Prefeitura. As duas colunas sempre vazias nesse layout foram tratadas como coordenadas ausentes.
