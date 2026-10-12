@@ -14,6 +14,21 @@ const config = {
   headTags: [
     {tagName: 'link', attributes: {rel: 'icon', href: '/dados-publicos-sp/favicon.ico', sizes: 'any'}},
     {tagName: 'link', attributes: {rel: 'apple-touch-icon', href: '/dados-publicos-sp/apple-touch-icon.png'}},
+    // CSS do KaTeX servido pelo próprio site (static/katex), carregado sem bloquear a renderização
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'preload',
+        as: 'style',
+        href: '/dados-publicos-sp/katex/katex.min.css',
+        onload: "this.onload=null;this.rel='stylesheet'",
+      },
+    },
+    {
+      tagName: 'noscript',
+      attributes: {},
+      innerHTML: '<link rel="stylesheet" href="/dados-publicos-sp/katex/katex.min.css">',
+    },
   ],
 
   future: {
@@ -34,14 +49,6 @@ const config = {
   },
 
   i18n: {defaultLocale: 'pt-BR', locales: ['pt-BR']},
-
-  stylesheets: [
-    {
-      href: 'https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css',
-      type: 'text/css',
-      crossorigin: 'anonymous',
-    },
-  ],
 
   themes: [
     '@docusaurus/theme-mermaid',

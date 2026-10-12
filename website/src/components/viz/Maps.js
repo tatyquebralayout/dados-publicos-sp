@@ -108,7 +108,13 @@ export function GridMap({grid, tema, geo}) {
   const theme = useTheme();
   const ctx = useLeaflet(ref);
   useOutline(ctx, geo, theme);
-  const cells = grid.celulas[tema] || [];
+  // grade.json: "pontos" [[lat, lon], ...] e "n" {tema: [n por ponto]}, 0 = célula oculta
+  const cells = useMemo(() => {
+    const ns = grid.n[tema] || [];
+    const out = [];
+    grid.pontos.forEach(([lat, lon], i) => { if (ns[i]) out.push([lat, lon, ns[i]]); });
+    return out;
+  }, [grid, tema]);
   const breaks = useMemo(() => quantileBreaks(cells.map((c) => c[2]), [0.4, 0.7, 0.9, 0.98]), [cells]);
   useEffect(() => {
     if (!ctx) return undefined;
