@@ -1,0 +1,137 @@
+name: Atualizar dados do SP156
+
+# Toda semana confere se a Prefeitura publicou trimestre novo (ou republicou algum arquivo)
+# do SP156 no Portal de Dados Abertos. Só quando há novidade o pipeline completo roda e abre
+# uma PR com os agregados do site. Os dados brutos (data/) nunca entram no repositório.
+#
+# Custo: tudo roda em ubuntu-latest, a máquina padrão do GitHub, gratuita e sem limite de
+# minutos em repositório público. Nunca trocar por larger runners (ubuntu-latest-4-cores etc.),
+# que são cobrados por minuto.
+#
+# Atenção: em repositório público o GitHub desliga sozinho o agendamento depois de 60 dias
+# sem commits. Se isso acontecer, reative em Actions > "Atualizar dados do SP156" > Enable workflow.
+
+on:
+  schedule:
+    - cron: '17 6 * * 1'   # segunda-feira, 06:17 UTC (03:17 em Brasília)
+  workflow_dispatch:
+    inputs:
+      forcar:
+        description: 'Reconstruir mesmo sem arquivo novo no CKAN'
+        type: boolean
+        default: false
+
+# Sem permissão nenhuma por padrão; cada job pede só o que precisa.
+permissions: {}
+
+concurrency:
+  group: atualizar-dados
+  cancel-in-progress: false
+
+jobs:
+  checar:
+    name: Checar CKAN
+    runs-on: ubuntu-latest   # máquina padrão: gratuita em repositório público
+    timeout-minutes: 10
+    permissions:
+      contents: read
+    outputs:
+      novo: ${{ steps.ckan.outputs.novo }}
+      periodos: ${{ steps.ckan.outputs.periodos }}
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+
+      # Checagem leve: só requests + pyyaml, sem instalar o pipeline inteiro.
+      - run: pip install requests pyyaml
+
+      - id: ckan
+        name: Comparar CKAN com config/sp156_resources.csv
+        run: python scripts/checar_sp156.py
+
+  reconstruir:
+    name: Reconstruir dados e abrir PR
+    needs: checar
+    if: needs.checar.outputs.novo == 'true' || inputs.forcar == true
+    # Máquina padrão, gratuita em repositório público. NUNCA usar larger runners: são pagos.
+    runs-on: ubuntu-latest
+    timeout-minutes: 350     # abaixo do limite de 6 h por job
+    permissions:
+      contents: write        # empurrar o branch da PR
+      pull-requests: write   # abrir/atualizar a PR
+    steps:
+      - uses: actions/checkout@v7
+
+      # O pipeline chega a 8-9 GB em disco no pico; libera ferramentas pré-instaladas que não usamos.
+      - name: Liberar espaço em disco
+        run: |
+          df -h /
+          sudo rm -rf /usr/share/dotnet /usr/local/lib/android /opt/ghc /opt/hostedtoolcache/CodeQL
+          df -h /
+
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'   # pyproject pede >= 3.11; mesma versão do workflow de testes
+          cache: pip
+          cache-dependency-path: pyproject.toml
+
+      - name: Instalar o pipeline
+        run: pip install -e '.[dev]'
+
+      # Camadas do GeoSampa (distritos e família sac_*): o export do site depende delas e,
+      # numa máquina nova, não existe nada em data/.
+      - name: GeoSampa (distritos e camadas sac_*)
+        run: dados-publicos all
+
+      # O `update` segue em frente se o download falhar (pensado pra rodar com cache local).
+      # Aqui não há cache, então baixamos antes e paramos se qualquer arquivo falhar.
+      - name: Baixar SP156
+        run: |
+          dados-publicos sp156-download
+          python - <<'PY'
+          import json, sys
+          m = json.load(open("data/raw/sp156/_manifest.json", encoding="utf-8"))
+          ruins = [r["periodo"] + ": " + r["status"] for r in m if r["status"] not in ("baixado", "cache")]
+          print(len(m), "arquivos no manifesto")
+          if ruins:
+              print("Falha no download:", *ruins, sep="\n  ")
+              sys.exit(1)
+          PY
+          df -h /
+
+      - name: Atualizar SP156 (bronze, silver, qualidade, gold, geo)
+        run: dados-publicos update
+
+      - name: Testes
+        run: pytest -q
+
+      - name: Exportar agregados do site
+        run: |
+          python scripts/export_site_data.py
+          df -h /
+
+      # Só os JSON do site e o índice do CKAN entram na PR. data/ está no .gitignore e não é listado aqui.
+      - name: Abrir PR
+        uses: peter-evans/create-pull-request@v8
+        with:
+          branch: dados/atualizacao-sp156
+          delete-branch: true
+          add-paths: |
+            website/static/data/*.json
+            config/sp156_resources.csv
+          commit-message: >-
+            Atualiza dados do SP156 (${{ needs.checar.outputs.periodos || 'reconstrução manual' }})
+          title: 'Atualiza dados do SP156'
+          body: |
+            Atualização automática feita pelo workflow **Atualizar dados do SP156**.
+
+            - Períodos novos ou republicados no CKAN: `${{ needs.checar.outputs.periodos || 'nenhum (reconstrução forçada)' }}`
+            - Pipeline completo rodou com qualidade e `pytest` passando.
+            - Só entram `website/static/data/*.json` e `config/sp156_resources.csv`; dados brutos não vão pro repositório.
+            - Rodou em `ubuntu-latest` (máquina padrão, gratuita em repositório público).
+
+            Ao fazer merge, o workflow **Publicar site** atualiza o site sozinho.
+            Execução: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
