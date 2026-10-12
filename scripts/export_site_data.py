@@ -51,6 +51,21 @@ def dump(name: str, obj) -> None:
     print(f"{name}.json  {p.stat().st_size / 1024:.0f} KB")
 
 
+def compactar_grade(cells, temas: list[str]) -> dict:
+    """Monta o grade.json compacto a partir de (tema, lat, lon, n).
+
+    Cada célula aparece uma vez em "pontos" ([lat, lon], de norte a sul e de oeste a leste),
+    e "n" traz, por tema, uma lista alinhada com "pontos" (0 = célula oculta ou sem solicitações).
+    Mesmos valores do formato antigo ({tema: [[lat, lon, n], ...]}), em cerca de 1/3 do tamanho.
+    """
+    pontos = sorted({(lat, lon) for _, lat, lon, _ in cells}, key=lambda p: (-p[0], p[1]))
+    idx = {p: i for i, p in enumerate(pontos)}
+    n = {t: [0] * len(pontos) for t in temas}
+    for tema, lat, lon, v in cells:
+        n[tema][idx[(lat, lon)]] = int(v)
+    return {"celula_m": 500, "k_min": K_MIN, "temas": temas, "pontos": [list(p) for p in pontos], "n": n}
+
+
 def rows(con, sql: str) -> list[dict]:
     cur = con.execute(sql)
     cols = [d[0] for d in cur.description]
@@ -165,10 +180,7 @@ def main() -> None:
         SELECT tema, round(ST_Y(p), 5) lat, round(ST_X(p), 5) lon, n FROM (
           SELECT tema, n, ST_Transform(ST_Point(x, y), 'EPSG:31983', 'EPSG:4326', always_xy := true) p
           FROM agg WHERE n >= {K_MIN})""", [top_temas]).fetchall()
-    by_tema: dict[str, list] = {}
-    for tema, lat, lon, n in cells:
-        by_tema.setdefault(tema, []).append([lat, lon, int(n)])
-    dump("grade", {"celula_m": 500, "k_min": K_MIN, "temas": ["Todos os temas"] + top_temas, "celulas": by_tema})
+    dump("grade", compactar_grade(cells, ["Todos os temas"] + top_temas))
 
     # ---- qualidade dos dados ---------------------------------------------------------------------
     dump("qualidade_periodo", rows(con, f"""SELECT * FROM read_parquet('{DATA}/gold/sp156/qualidade_periodo.parquet')

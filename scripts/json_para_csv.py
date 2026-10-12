@@ -73,9 +73,11 @@ def converter(nome: str, obj) -> dict[str, tuple[list[str], list[list]]]:
         cols = ["distrito", "total"] + [f"n_{a}" for a in anos]
         return {nome: (cols, [[r["distrito"], r["total"]] + [r["anos"].get(a, 0) for a in anos] for r in obj])}
     if nome == "grade":
-        # células por tema: [lat, lon, n] -> formato longo, ordenado (o export não fixa a ordem)
+        # células por tema -> formato longo, ordenado (o export não fixa a ordem).
+        # grade.json compacto: "pontos" [[lat, lon], ...] e "n" {tema: [n por ponto]}, 0 = sem célula
         ordem = {t: i for i, t in enumerate(obj["temas"])}
-        linhas = [[t, lat, lon, n] for t, cel in obj["celulas"].items() for lat, lon, n in cel]
+        linhas = [[t, lat, lon, v] for t, ns in obj["n"].items()
+                  for (lat, lon), v in zip(obj["pontos"], ns) if v]
         linhas.sort(key=lambda r: (ordem.get(r[0], len(ordem)), r[0], r[1], r[2]))
         return {nome: (["tema", "lat", "lon", "n"], linhas)}
     if nome == "reativacao":

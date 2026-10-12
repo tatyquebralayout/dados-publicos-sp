@@ -20,6 +20,9 @@ Gerados por `scripts/export_site_data.py` em `website/static/data/` e servidos e
 | `qualidade_periodo.json`, `qualidade_distrito.json` | cobertura e coincidência de distrito | qualidade |
 | `sac_camadas.json`, `reativacao.json` | camadas GeoSampa e a camada de reativação (sem endereço) | reativação |
 
+## Formato do `grade.json`
+Cada célula aparece uma vez em `pontos` (`[lat, lon]` do centro, 5 casas decimais). Em `n`, cada tema tem uma lista do mesmo tamanho de `pontos`, com o número de solicitações de cada célula. O valor 0 indica célula oculta ou sem solicitações. Assim, as coordenadas não se repetem para os 7 temas, e o arquivo cai de 674 KB para 217 KB com os mesmos valores. O `grade.csv` continua no formato longo (`tema, lat, lon, n`).
+
 ## CSV para download
 `scripts/json_para_csv.py` converte estes JSON em CSV (UTF-8 com BOM, vírgula) em `website/static/data/csv/`, e grava o número de linhas de cada um em `csv_indice.json`. Roda no fim do `export_site_data.py`. `distritos_geo.json` fica de fora por ser GeoJSON. Os arquivos e o dicionário de colunas estão em [Baixe os dados](../catalogo/baixe-os-dados.mdx).
 
