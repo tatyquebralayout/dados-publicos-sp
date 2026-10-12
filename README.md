@@ -15,7 +15,7 @@
 
 - **Base SP156 completa:** 18.774.202 solicitações, 2015T1 a 2026T2 (CKAN do Portal de Dados Abertos).
 - **94 camadas GeoSampa `sac_*`:** 143.461 solicitações, abril a setembro de 2020 (WFS).
-- **Um pipeline Python testado** que baixa, limpa, valida e agrega tudo sozinho, com atualização semanal opcional.
+- **Um pipeline Python testado** que baixa, limpa, valida e agrega tudo sozinho, com atualização automática toda semana pelo GitHub Actions.
 - O projeto nasceu da camada [Reativação de um abrigo ou ponto que foi extinto](https://metadados.geosampa.prefeitura.sp.gov.br/geonetwork/srv/por/catalog.search#/metadata/5703aa4e-e3ca-4284-812a-0d1e2fde09bb), por isso o nome antigo do repositório.
 
 ## Estrutura
@@ -26,7 +26,7 @@
 | `scripts/export_site_data.py` | gera os agregados JSON dos painéis (só agregados, sem endereços) |
 | `website/` | site Docusaurus (painéis, catálogo, metodologia, guias) |
 | `tests/` | testes do pipeline |
-| `deploy/` | agendamento semanal (systemd/cron), não instalado automaticamente |
+| `deploy/` | agendamento local opcional (systemd/cron); o automático roda pelo GitHub Actions |
 | `docs/metadata/` | metadado ISO 19139 original da camada de partida |
 
 Os dados do pipeline (`data/`, 4,5 GB) **não são versionados**; reconstrua com o comando abaixo.
@@ -70,7 +70,7 @@ Os dados vêm da Prefeitura de São Paulo (CKAN: Creative Commons CCZero; GeoSam
 
 ## 🇺🇸 English
 
-Python pipeline, documentation and dashboards for São Paulo city open data: the full SP156 service-request base (18,774,202 requests, 2015 Q1 to 2026 Q2, from the city's CKAN portal) and 94 GeoSampa `sac_*` layers (143,461 requests, April to September 2020, via WFS). The data goes through bronze, silver and gold layers, geocoding and quality checks, with tests and a weekly update option.
+Python pipeline, documentation and dashboards for São Paulo city open data: the full SP156 service-request base (18,774,202 requests, 2015 Q1 to 2026 Q2, from the city's CKAN portal) and 94 GeoSampa `sac_*` layers (143,461 requests, April to September 2020, via WFS). The data goes through bronze, silver and gold layers, geocoding and quality checks, with tests and an automatic weekly update through GitHub Actions.
 
 **Site (dashboards and docs, in Portuguese):** https://tatyquebralayout.github.io/dados-publicos-sp/
 
