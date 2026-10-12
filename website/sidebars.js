@@ -2,6 +2,7 @@
 const sidebars = {
   docs: [
     'intro',
+    'catalogo/baixe-os-dados',
     {
       type: 'category', label: 'Catálogo de dados', link: {type: 'doc', id: 'catalogo/index'},
       items: ['catalogo/camadas', 'catalogo/dicionario-sp156', 'catalogo/geosampa-sac', 'catalogo/reativacao-abrigos'],

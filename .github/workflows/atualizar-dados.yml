@@ -113,7 +113,7 @@ jobs:
           python scripts/export_site_data.py
           df -h /
 
-      # Só os JSON do site e o índice do CKAN entram na PR. data/ está no .gitignore e não é listado aqui.
+      # Só os JSON e CSV do site e o índice do CKAN entram na PR. data/ está no .gitignore e não é listado aqui.
       - name: Abrir PR
         uses: peter-evans/create-pull-request@v8
         with:
@@ -121,6 +121,7 @@ jobs:
           delete-branch: true
           add-paths: |
             website/static/data/*.json
+            website/static/data/csv/*.csv
             config/sp156_resources.csv
           commit-message: >-
             Atualiza dados do SP156 (${{ needs.checar.outputs.periodos || 'reconstrução manual' }})
@@ -130,7 +131,7 @@ jobs:
 
             - Períodos novos ou republicados no CKAN: `${{ needs.checar.outputs.periodos || 'nenhum (reconstrução forçada)' }}`
             - Pipeline completo rodou com qualidade e `pytest` passando.
-            - Só entram `website/static/data/*.json` e `config/sp156_resources.csv`; dados brutos não vão pro repositório.
+            - Só entram `website/static/data/*.json`, `website/static/data/csv/*.csv` e `config/sp156_resources.csv`; dados brutos não vão pro repositório.
             - Rodou em `ubuntu-latest` (máquina padrão, gratuita em repositório público).
 
             Ao fazer merge, o workflow **Publicar site** atualiza o site sozinho.
