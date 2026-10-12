@@ -41,3 +41,13 @@ Guia completo: [Executar o pipeline](https://tatyquebralayout.github.io/dados-pu
 
 ## Licença e dados
 Os dados vêm da Prefeitura de São Paulo (CKAN: Creative Commons CCZero; GeoSampa: sem restrições, conforme os metadados). O código deste repositório está sob a [licença MIT](LICENSE). Os dados seguem a licença da fonte.
+
+---
+
+## 🇺🇸 English
+
+Python pipeline, documentation and dashboards for São Paulo city open data: the full SP156 service-request base (18,774,202 requests, 2015 Q1 to 2026 Q2, from the city's CKAN portal) and 94 GeoSampa `sac_*` layers (143,461 requests, April to September 2020, via WFS). The data goes through bronze, silver and gold layers, geocoding and quality checks, with tests and a weekly update option.
+
+**Site (dashboards and docs, in Portuguese):** https://tatyquebralayout.github.io/dados-publicos-sp/
+
+Things to keep in mind: the GeoSampa layers haven't been updated since 2021, response times are only reliable from 2020 on, the maps show counts rather than per-capita rates, and this is an independent project with no official tie to the city government. The code is MIT-licensed; the data keeps the license of its source.
