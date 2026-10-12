@@ -40,4 +40,4 @@ Guia completo: [Executar o pipeline](https://tatyquebralayout.github.io/reativac
 - Projeto independente, sem vínculo oficial com a Prefeitura de São Paulo.
 
 ## Licença e dados
-Os dados vêm da Prefeitura de São Paulo (CKAN: Creative Commons CCZero; GeoSampa: sem restrições, conforme os metadados). O código deste repositório ainda **não tem licença definida**: adicione um arquivo `LICENSE` antes de aceitar contribuições externas.
+Os dados vêm da Prefeitura de São Paulo (CKAN: Creative Commons CCZero; GeoSampa: sem restrições, conforme os metadados). O código deste repositório está sob a [licença MIT](LICENSE). Os dados seguem a licença da fonte.

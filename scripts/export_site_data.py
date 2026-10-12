@@ -18,7 +18,11 @@ ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data"
 OUT = ROOT / "website" / "static" / "data"
 K_MIN = 5
-G = f"read_parquet('{DATA}/silver/sp156/**/*.parquet', hive_partitioning=true)"
+# Temas de teste do próprio sistema da Prefeitura ("tema001 - teste", "TESTE SEI", "tema002"...)
+# não são demandas reais e saem de todos os agregados. Ver "Anomalias da fonte", item 13.
+TEMA_TESTE = r"(?i)teste|^tema0[0-9]+$"
+G = (f"(SELECT * FROM read_parquet('{DATA}/silver/sp156/**/*.parquet', hive_partitioning=true) "
+     f"WHERE NOT regexp_matches(coalesce(tema, ''), '{TEMA_TESTE}'))")
 GEO = f"read_parquet('{DATA}/silver/sp156_geo/coord_distrito.parquet')"
 SAC = f"read_parquet('{DATA}/silver/sac_todas/**/*.parquet', hive_partitioning=true)"
 
