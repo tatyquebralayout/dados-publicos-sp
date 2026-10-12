@@ -7,6 +7,13 @@ authors:
   - family-names: Barros
     given-names: Tatiana
 license: MIT
+version: "1.0.0"
+date-released: "2026-10-11"
+doi: "10.5281/zenodo.23307709"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.23307709"
+    description: "Zenodo, v1.0.0"
 repository-code: "https://github.com/tatyquebralayout/dados-publicos-sp"
 url: "https://tatyquebralayout.github.io/dados-publicos-sp/"
 keywords:

@@ -7,6 +7,8 @@
 
 <a href="https://tatyquebralayout.github.io/dados-publicos-sp/"><img src="preview.webp" width="640" alt="Prévia: o site do projeto rolando, com os totais de solicitações e os caminhos por onde começar · Preview: the project site scrolling, showing request totals and where to start"></a>
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23307709.svg)](https://doi.org/10.5281/zenodo.23307709)
+
 ### [▶ Ver os painéis · See the dashboards](https://tatyquebralayout.github.io/dados-publicos-sp/)
 
 </div>
