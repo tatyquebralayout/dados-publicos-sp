@@ -52,8 +52,8 @@ sac_limpeza_enchente_evento,175,2020-04-01,2020-09-29,2021-03-25Z,Limpeza da via
 sac_comunicacao_problema_posto_recarga_bilhete_unico,174,2020-04-01,2020-09-30,2021-03-25Z,Comunicação de problema em posto de recarga
 sac_denuncia_ma_conduta_funcionario_limpeza,163,2020-04-02,2020-09-30,2021-03-25Z,Denúncia de má conduta dos funcionários de limpeza
 sac_implantacao_coleta_porta_porta,157,2020-04-01,2020-09-30,2021-03-25Z,Implantação de coleta porta-porta
-sac_remocao_conteiner_coleta_lixo_domiciliar,147,2020-04-02,2020-09-30,2021-03-25Z,Remoção de contêiner para coleta de lixo domiciliar
 sac_erosao_urgencia,147,2020-04-01,2020-09-30,2021-03-25Z,Erosão
+sac_remocao_conteiner_coleta_lixo_domiciliar,147,2020-04-02,2020-09-30,2021-03-25Z,Remoção de contêiner para coleta de lixo domiciliar
 sac_limpeza_onibus,141,2020-04-02,2020-09-30,2021-03-25Z,Limpeza do ônibus
 sac_selo_identificacao_estabelecimento_gerador_residuo,141,2020-04-09,2020-09-30,2021-03-25Z,Selo de identificação de estabelecimento gerador de resíduos de saúde – 1ª e 2ª via
 sac_reclamacao_fila_tumulto_terminal_onibus,124,2020-04-01,2020-09-17,2021-03-25Z,Reclamação de filas e tumulto em terminais de ônibus
@@ -61,15 +61,15 @@ sac_vistoria_reparo_ponte_viaduto,115,2020-04-06,2020-09-29,2021-03-25Z,Vistoria
 sac_reimplantacao_substituicao_ponto_onibus_antigo_novo,99,2020-04-11,2020-09-29,2021-03-25Z,Reimplantação ou substituição de um ponto de ônibus do modelo antigo por um equipamento do modelo novo
 sac_conserto_lixeira,98,2020-04-02,2020-08-20,2021-03-25Z,Conserto de lixeira
 sac_sugestao_obra_drenagem_corrego,88,2020-04-06,2020-09-30,2021-03-25Z,Sugerir obras de drenagem em córregos
-sac_reclamacao_falta_lavagem_calcadao,87,2020-04-01,2020-09-29,2021-03-25Z,Reclamação de falta de lavagem de calçadões
 sac_limpeza_manutencao_monumento_publico,87,2020-04-02,2020-09-30,2021-03-25Z,Limpeza e conservação de monumentos públicos
+sac_reclamacao_falta_lavagem_calcadao,87,2020-04-01,2020-09-29,2021-03-25Z,Reclamação de falta de lavagem de calçadões
 sac_solicitacao_manutencao_sinalizacao_pintura_ciclofaixa,78,2020-04-04,2020-09-25,2021-03-25Z,"Ciclovias, ciclofaixas e ciclorrotas - solicitar manutenção da sinalização e pintura"
 sac_sugestao_implantacao_ciclovia_ciclofaixa,69,2020-04-06,2020-10-01,2021-03-25Z,"Ciclovias, ciclofaixas e ciclorrotas - Sugerir implantação"
 sac_aviso_animal_encontrado,67,2020-04-03,2020-09-30,2021-03-25Z,Avisar  sobre animal encontrado com Registro Geral do Animal (RGA)
 sac_remocao_animal_grande_porte_solto,65,2020-04-05,2020-09-30,2021-03-25Z,Animal de grande porte solto - Solicitar remoção
 sac_ausencia_coleta_conteiner_coleta_seletiva,60,2020-04-04,2020-09-29,2021-03-25Z,Ausência de coleta do contêiner para coleta seletiva
-sac_solicitacao_manutencao_conteiner_coleta_seletiva,47,2020-04-09,2020-09-25,2021-03-25Z,Coleta seletiva - Solicitar manutenção de contêiner
 sac_rompimento_galeria_agua_pluvial,47,2020-04-08,2020-09-25,2021-03-25Z,Rompimento de galeria de águas pluviais
+sac_solicitacao_manutencao_conteiner_coleta_seletiva,47,2020-04-09,2020-09-25,2021-03-25Z,Coleta seletiva - Solicitar manutenção de contêiner
 sac_reativacao_abrigo_ponto_extinto,45,2020-04-15,2020-09-30,2021-03-25Z,Reativação de um abrigo ou ponto que foi extinto
 sac_remocao_conteiner_coleta_seletiva,42,2020-04-13,2020-09-29,2021-03-25Z,Remoção do contêiner de coleta seletiva
 sac_reparo_catraca_eletronica_validador_falha,37,2020-04-03,2020-09-24,2021-03-25Z,Reparo de catraca eletronica/ validador com falha
@@ -79,14 +79,14 @@ sac_reclamacao_descumprimento_horario_veiculo_adaptado,30,2020-04-03,2020-09-21,
 sac_reclamacao_problema_olho_vivo,22,2020-04-03,2020-09-20,2021-03-25Z,Reclamação de problemas no olho vivo
 sac_comunicacao_venda_credito_clandestino,21,2020-04-23,2020-09-24,2021-03-25Z,Comunicação de ponto de venda de crédito clandestino
 sac_solicitacao_avaliacao_infraestrutura_ciclovia,19,2020-04-27,2020-09-21,2021-03-25Z,"Ciclovias, ciclofaixas e ciclorrotas - Solicitar avaliação da infraestrutura"
-sac_reclamacao_sinalizacao_inadequada_terminal_onibus,17,2020-04-13,2020-09-20,2021-03-25Z,Reclamação de sinalização inadequada de terminais de ônibus
 sac_reclamacao_conduta_motorista_atende,17,2020-04-03,2020-09-23,2021-03-25Z,Reclamação de conduta de motorista do ATENDE
-sac_inclusao_veiculo_adaptado_linha,16,2020-05-03,2020-09-29,2021-03-25Z,Inclusão de veículo adaptado na linha
+sac_reclamacao_sinalizacao_inadequada_terminal_onibus,17,2020-04-13,2020-09-20,2021-03-25Z,Reclamação de sinalização inadequada de terminais de ônibus
 sac_elogio_empresa_onibus,16,2020-04-14,2020-09-21,2021-03-25Z,Elogio à empresa de ônibus
+sac_inclusao_veiculo_adaptado_linha,16,2020-05-03,2020-09-29,2021-03-25Z,Inclusão de veículo adaptado na linha
 sac_sugestao_elogio_olho_vivo,15,2020-05-04,2020-09-08,2021-03-25Z,Olho Vivo - Sugestão e elogio
 sac_reclamacao_falta_comunicacao_onibus,15,2020-04-08,2020-09-11,2021-03-25Z,Reclamação de falta de comunicado nos ônibus
-sac_criacao_partida_horario_especifico,14,2020-05-08,2020-09-09,2021-03-25Z,Criação de partida em horário específico
 sac_reparo_manutencao_relogio_rua,14,2020-04-27,2020-09-16,2021-03-25Z,Reparo e manutenção de relógios de rua
+sac_criacao_partida_horario_especifico,14,2020-05-08,2020-09-09,2021-03-25Z,Criação de partida em horário específico
 sac_solicitacao_avaliacao_ciclofaixa_lazer,12,2020-04-15,2020-09-30,2021-03-25Z,Ciclofaixas de lazer - Solicitar avaliação
 sac_denuncia_veiculo_clandestino_nao_credenciado,11,2020-04-30,2020-08-31,2021-03-25Z,Denúncia de veículo clandestino ou não credenciado
 sac_manutencao_conteiner_residuo_servico_saude,7,2020-06-23,2020-09-30,2021-03-25Z,Manutenção de contêiner de resíduos do serviço de saúde
