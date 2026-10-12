@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from '@docusaurus/Link';
 import Layout from '@theme/Layout';
+import Head from '@docusaurus/Head';
 import {HomeKpis} from '../components/panels/Panels';
 
 const personas = [
@@ -12,7 +13,12 @@ const personas = [
 
 export default function Home() {
   return (
-    <Layout title="Dados Públicos de São Paulo" description="SP156 e GeoSampa: dados abertos tratados, documentados e expostos em painéis">
+    <Layout description="Painéis com 18,7 milhões de solicitações do SP156 e mapas do GeoSampa, com pipeline aberto em Python e dados que você pode conferir.">
+      <Head>
+        <title>Dados públicos de São Paulo · Tatiana Barros</title>
+        <meta property="og:title" content="Dados públicos de São Paulo · Tatiana Barros" />
+        <meta name="twitter:title" content="Dados públicos de São Paulo · Tatiana Barros" />
+      </Head>
       <header className="hero hero--home">
         <div className="container">
           <h1 className="hero__title">Dados Públicos de São Paulo</h1>
