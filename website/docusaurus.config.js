@@ -149,6 +149,7 @@ const config = {
             ],
           },
           {type: 'docSidebar', sidebarId: 'docs', position: 'left', label: 'Documentação'},
+          {to: '/docs/catalogo/baixe-os-dados', label: 'Baixe os dados', position: 'left'},
           {to: '/notas', label: 'Notas de versão', position: 'left'},
           {href: repo, label: 'GitHub', position: 'right'},
         ],
@@ -168,6 +169,7 @@ const config = {
             title: 'Documentação',
             items: [
               {label: 'Catálogo de dados', to: '/docs/catalogo'},
+              {label: 'Baixe os dados (CSV)', to: '/docs/catalogo/baixe-os-dados'},
               {label: 'Metodologia', to: '/docs/metodologia/plano-de-tratamento'},
               {label: 'Guias', to: '/docs/guias/executar-o-pipeline'},
             ],

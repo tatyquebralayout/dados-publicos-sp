@@ -14,6 +14,8 @@ from pathlib import Path
 
 import duckdb
 
+import json_para_csv  # scripts/json_para_csv.py, mesma pasta
+
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data"
 OUT = ROOT / "website" / "static" / "data"
@@ -196,6 +198,9 @@ def main() -> None:
         "pontos": [[round(a, 5), round(b, 5), ym, s] for a, b, ym, s in con.execute(
             f"SELECT lat, lon, ano_mes, tx_situacao_solicitacao FROM {R} ORDER BY ano_mes").fetchall()],
     })
+
+    # ---- CSV para a página "Baixe os dados" (mesmos agregados, um CSV por tabela) ---------------
+    json_para_csv.main()
 
 
 if __name__ == "__main__":

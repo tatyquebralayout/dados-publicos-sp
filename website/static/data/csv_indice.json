@@ -1,0 +1,230 @@
+{
+ "anual": {
+  "arquivo": "anual.csv",
+  "origem": "anual.json",
+  "linhas": 12,
+  "colunas": [
+   "ano",
+   "n",
+   "pct_coordenada",
+   "pct_finalizada",
+   "prazo_mediano"
+  ]
+ },
+ "canal_ano": {
+  "arquivo": "canal_ano.csv",
+  "origem": "canal_ano.json",
+  "linhas": 56,
+  "colunas": [
+   "ano",
+   "canal",
+   "n"
+  ]
+ },
+ "distritos": {
+  "arquivo": "distritos.csv",
+  "origem": "distritos.json",
+  "linhas": 96,
+  "colunas": [
+   "distrito",
+   "total",
+   "n_2015",
+   "n_2016",
+   "n_2017",
+   "n_2018",
+   "n_2019",
+   "n_2020",
+   "n_2021",
+   "n_2022",
+   "n_2023",
+   "n_2024",
+   "n_2025",
+   "n_2026"
+  ]
+ },
+ "grade": {
+  "arquivo": "grade.csv",
+  "origem": "grade.json",
+  "linhas": 26348,
+  "colunas": [
+   "tema",
+   "lat",
+   "lon",
+   "n"
+  ]
+ },
+ "mensal": {
+  "arquivo": "mensal.csv",
+  "origem": "mensal.json",
+  "linhas": 138,
+  "colunas": [
+   "ym",
+   "n"
+  ]
+ },
+ "orgaos_top": {
+  "arquivo": "orgaos_top.csv",
+  "origem": "orgaos_top.json",
+  "linhas": 25,
+  "colunas": [
+   "orgao",
+   "n",
+   "pct_finalizada",
+   "prazo_mediano",
+   "prazo_p90"
+  ]
+ },
+ "overview": {
+  "arquivo": "overview.csv",
+  "origem": "overview.json",
+  "linhas": 18,
+  "colunas": [
+   "indicador",
+   "valor"
+  ]
+ },
+ "prazo_faixas_ano": {
+  "arquivo": "prazo_faixas_ano.csv",
+  "origem": "prazo_faixas_ano.json",
+  "linhas": 49,
+  "colunas": [
+   "ano",
+   "faixa",
+   "n"
+  ]
+ },
+ "qualidade_distrito": {
+  "arquivo": "qualidade_distrito.csv",
+  "origem": "qualidade_distrito.json",
+  "linhas": 12,
+  "colunas": [
+   "ano",
+   "com_coordenada",
+   "dentro_de_algum_distrito",
+   "com_distrito_declarado",
+   "coincidem",
+   "distrito_recuperado"
+  ]
+ },
+ "qualidade_periodo": {
+  "arquivo": "qualidade_periodo.csv",
+  "origem": "qualidade_periodo.json",
+  "linhas": 46,
+  "colunas": [
+   "periodo",
+   "linhas",
+   "dt_min",
+   "dt_max",
+   "pct_com_coordenada",
+   "pct_com_distrito",
+   "pct_com_finalizacao",
+   "finalizacao_antes_abertura",
+   "sem_tema"
+  ]
+ },
+ "reativacao_canal": {
+  "arquivo": "reativacao_canal.csv",
+  "origem": "reativacao.json",
+  "linhas": 2,
+  "colunas": [
+   "canal",
+   "n"
+  ]
+ },
+ "reativacao_pontos": {
+  "arquivo": "reativacao_pontos.csv",
+  "origem": "reativacao.json",
+  "linhas": 45,
+  "colunas": [
+   "lat",
+   "lon",
+   "ym",
+   "situacao"
+  ]
+ },
+ "reativacao_por_mes": {
+  "arquivo": "reativacao_por_mes.csv",
+  "origem": "reativacao.json",
+  "linhas": 6,
+  "colunas": [
+   "ym",
+   "n"
+  ]
+ },
+ "reativacao_resumo": {
+  "arquivo": "reativacao_resumo.csv",
+  "origem": "reativacao.json",
+  "linhas": 2,
+  "colunas": [
+   "indicador",
+   "valor"
+  ]
+ },
+ "reativacao_situacao": {
+  "arquivo": "reativacao_situacao.csv",
+  "origem": "reativacao.json",
+  "linhas": 3,
+  "colunas": [
+   "situacao",
+   "n"
+  ]
+ },
+ "sac_camadas": {
+  "arquivo": "sac_camadas.csv",
+  "origem": "sac_camadas.json",
+  "linhas": 94,
+  "colunas": [
+   "nome",
+   "n",
+   "de",
+   "ate",
+   "dt_carga",
+   "titulo"
+  ]
+ },
+ "servicos_top": {
+  "arquivo": "servicos_top.csv",
+  "origem": "servicos_top.json",
+  "linhas": 30,
+  "colunas": [
+   "servico",
+   "tema",
+   "n",
+   "prazo_mediano",
+   "desde",
+   "ate"
+  ]
+ },
+ "status_ano": {
+  "arquivo": "status_ano.csv",
+  "origem": "status_ano.json",
+  "linhas": 38,
+  "colunas": [
+   "ano",
+   "situacao",
+   "n"
+  ]
+ },
+ "tema_ano": {
+  "arquivo": "tema_ano.csv",
+  "origem": "tema_ano.json",
+  "linhas": 305,
+  "colunas": [
+   "ano",
+   "tema",
+   "n"
+  ]
+ },
+ "tema_desempenho": {
+  "arquivo": "tema_desempenho.csv",
+  "origem": "tema_desempenho.json",
+  "linhas": 34,
+  "colunas": [
+   "tema",
+   "n",
+   "pct_finalizada",
+   "prazo_mediano",
+   "prazo_p90"
+  ]
+ }
+}

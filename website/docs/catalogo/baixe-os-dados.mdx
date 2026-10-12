@@ -1,0 +1,271 @@
+---
+title: Baixe os dados
+sidebar_label: Baixe os dados
+description: Os agregados dos painéis em CSV, com dicionário de colunas
+---
+
+import useBaseUrl from '@docusaurus/useBaseUrl';
+import indice from '@site/static/data/csv_indice.json';
+import overview from '@site/static/data/overview.json';
+
+export const CONTEUDO = {
+  overview: 'Números gerais da base e frescor da fonte',
+  mensal: 'Solicitações por mês de abertura',
+  anual: 'Solicitações, cobertura e prazo por ano',
+  canal_ano: 'Solicitações por canal de atendimento e ano',
+  status_ano: 'Solicitações por situação e ano',
+  tema_ano: 'Solicitações por tema e ano',
+  tema_desempenho: 'Finalização e prazo por tema, de 2020 em diante',
+  servicos_top: 'Os 30 serviços com mais solicitações',
+  orgaos_top: 'Os 25 órgãos com mais solicitações, de 2020 em diante',
+  prazo_faixas_ano: 'Solicitações por faixa de prazo e ano, de 2020 em diante',
+  distritos: 'Solicitações por distrito, no total e por ano',
+  grade: 'Mapa de calor: células de 500 m por tema',
+  qualidade_periodo: 'Qualidade da fonte por arquivo trimestral',
+  qualidade_distrito: 'Distrito declarado x distrito pela coordenada, por ano',
+  sac_camadas: 'As 94 camadas `sac_*` do GeoSampa',
+  reativacao_resumo: 'Reativação de abrigo: total e prazo mediano',
+  reativacao_por_mes: 'Reativação de abrigo: solicitações por mês',
+  reativacao_situacao: 'Reativação de abrigo: solicitações por situação',
+  reativacao_canal: 'Reativação de abrigo: solicitações por canal',
+  reativacao_pontos: 'Reativação de abrigo: os 45 pontos no mapa, sem endereço',
+};
+
+export function Arquivos() {
+  const base = useBaseUrl('/data/csv/');
+  return (
+    <table>
+      <thead><tr><th>Arquivo</th><th>O que tem</th><th>Linhas</th></tr></thead>
+      <tbody>
+        {Object.entries(indice).map(([nome, f]) => (
+          <tr key={nome}>
+            <td><a href={base + f.arquivo} download>{f.arquivo}</a></td>
+            <td>{CONTEUDO[nome] ?? `Tabela gerada a partir de ${f.origem}`}</td>
+            <td style={{textAlign: 'right'}}>{f.linhas.toLocaleString('pt-BR')}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  );
+}
+
+export const geradoEm = new Date(overview.gerado_em).toLocaleDateString('pt-BR', {timeZone: 'America/Sao_Paulo'});
+
+# Baixe os dados
+
+Os números dos [painéis](/painel) também estão aqui em **CSV**, prontos para abrir no Excel, no LibreOffice ou no Google Planilhas. São só agregados: nenhum arquivo traz endereço, logradouro ou solicitação individual.
+
+- **Fonte:** [SP156, Portal de Dados Abertos da Prefeitura de São Paulo](https://dados.prefeitura.sp.gov.br/dataset/dados-do-sp156) e camadas `sac_*` do [GeoSampa](https://geosampa.prefeitura.sp.gov.br).
+- **Gerado em:** {geradoEm} (horário de São Paulo).
+- **Atualização:** automática. Quando a Prefeitura publica um trimestre novo do SP156, o pipeline roda de novo e os CSV são refeitos junto com os painéis (ver [Atualizar e agendar](../guias/atualizar-e-agendar.md)).
+
+:::caution[Registros de teste ainda nos totais]
+Os totais gerais ainda incluem **4.695 registros de teste do sistema** da Prefeitura (temas como "tema001 - teste" e "TESTE SEI", de 2020 em diante). O filtro já está no código, mas só vale a partir da próxima reconstrução da base. Detalhes no item 13 de [Anomalias da fonte](../metodologia/anomalias-da-fonte.md).
+:::
+
+## Arquivos
+
+<Arquivos />
+
+### Formato
+
+- Codificação **UTF-8 com BOM**, para o Excel em português mostrar os acentos certo.
+- Separador **vírgula**; casas decimais com **ponto** (`54.3`). Se o Excel juntar tudo numa coluna, use *Dados > De Texto/CSV* e escolha vírgula como delimitador.
+- Célula vazia quando o valor não existe (por exemplo, prazo antes de 2020).
+- `n` é sempre número de solicitações. `pct_*` é porcentagem de 0 a 100. Prazos são em dias corridos, da abertura até a finalização.
+- Os CSV saem dos JSON dos painéis pelo script `scripts/json_para_csv.py`. O mapa dos distritos (`distritos_geo.json`, GeoJSON com os polígonos) não é tabela e fica de fora; ele pode ser baixado [direto em JSON](pathname:///data/distritos_geo.json).
+
+## Dicionário de colunas
+
+Tipos: **texto**, **inteiro**, **decimal**, **data** (AAAA-MM-DD) e **mês** (AAAA-MM).
+
+### overview.csv
+
+Duas colunas: `indicador` (texto) e `valor` (texto, número ou data, conforme o indicador).
+
+| Indicador | Significado |
+|---|---|
+| `total` | Solicitações na base SP156 tratada |
+| `periodos` | Arquivos trimestrais da fonte carregados (2015T1, 2015T2…) |
+| `primeira`, `ultima` | Data de abertura mais antiga e mais recente |
+| `pct_coordenada` | % com coordenada dentro dos limites do município |
+| `pct_finalizada` | % com situação FINALIZADA |
+| `prazo_mediano_dias` | Mediana do prazo, em dias, de 2020 em diante |
+| `servicos`, `orgaos` | Quantidade de serviços e de órgãos diferentes |
+| `pct_distrito_final` | % com distrito, declarado ou recuperado pela coordenada |
+| `sac_linhas`, `sac_camadas` | Solicitações e camadas da família `sac_*` do GeoSampa |
+| `gerado_em` | Quando os dados do site foram gerados (UTC) |
+| `frescor.verificado_em` | Última verificação da fonte no CKAN (UTC) |
+| `frescor.ckan_metadata_modified` | Última modificação do conjunto SP156 no CKAN |
+| `frescor.ultimo_periodo_local` | Último trimestre carregado |
+| `frescor.sac_dt_carga` | Data da última carga das camadas `sac_*` no GeoSampa |
+| `frescor.avisos` | Avisos de defasagem da fonte, separados por ` \| ` |
+
+### mensal.csv
+
+| Coluna | Tipo | Significado |
+|---|---|---|
+| `ym` | mês | Mês de abertura |
+| `n` | inteiro | Solicitações abertas no mês |
+
+### anual.csv
+
+| Coluna | Tipo | Significado |
+|---|---|---|
+| `ano` | inteiro | Ano de abertura |
+| `n` | inteiro | Solicitações |
+| `pct_coordenada` | decimal | % com coordenada dentro do município |
+| `pct_finalizada` | decimal | % com situação FINALIZADA |
+| `prazo_mediano` | decimal | Mediana do prazo em dias; vazio antes de 2020, quando a fonte não registra a finalização (item 12 de [Anomalias da fonte](../metodologia/anomalias-da-fonte.md)) |
+
+### canal_ano.csv
+
+| Coluna | Tipo | Significado |
+|---|---|---|
+| `ano` | inteiro | Ano de abertura |
+| `canal` | texto | Canal como publicado na fonte, em maiúsculas; `SEM CANAL` quando vazio. Os nomes mudam a partir de 2020 |
+| `n` | inteiro | Solicitações |
+
+### status_ano.csv
+
+| Coluna | Tipo | Significado |
+|---|---|---|
+| `ano` | inteiro | Ano de abertura |
+| `situacao` | texto | `Finalizada`, `Cancelada`, `Relacionada` ou `Em aberto` (junta ABERTO, ABERTA, EM ANDAMENTO, EM APROVAÇÃO e AGUARDANDO APROVAÇÃO) |
+| `n` | inteiro | Solicitações |
+
+### tema_ano.csv
+
+| Coluna | Tipo | Significado |
+|---|---|---|
+| `ano` | inteiro | Ano de abertura |
+| `tema` | texto | Tema como publicado; solicitações sem tema ficam de fora |
+| `n` | inteiro | Solicitações |
+
+### tema_desempenho.csv
+
+Só solicitações abertas de 2020 em diante.
+
+| Coluna | Tipo | Significado |
+|---|---|---|
+| `tema` | texto | Tema |
+| `n` | inteiro | Solicitações |
+| `pct_finalizada` | decimal | % com situação FINALIZADA |
+| `prazo_mediano` | decimal | Mediana do prazo, em dias |
+| `prazo_p90` | decimal | Prazo em dias dentro do qual 90% foram finalizadas, arredondado |
+
+### servicos_top.csv
+
+Os 30 pares serviço e tema com mais solicitações em toda a série.
+
+| Coluna | Tipo | Significado |
+|---|---|---|
+| `servico` | texto | Serviço |
+| `tema` | texto | Tema do serviço |
+| `n` | inteiro | Solicitações |
+| `prazo_mediano` | decimal | Mediana do prazo em dias, de 2020 em diante |
+| `desde`, `ate` | inteiro | Primeiro e último ano com solicitações |
+
+### orgaos_top.csv
+
+Os 25 órgãos com mais solicitações de 2020 em diante.
+
+| Coluna | Tipo | Significado |
+|---|---|---|
+| `orgao` | texto | Órgão responsável, como publicado |
+| `n` | inteiro | Solicitações |
+| `pct_finalizada` | decimal | % com situação FINALIZADA |
+| `prazo_mediano` | decimal | Mediana do prazo, em dias |
+| `prazo_p90` | decimal | Prazo em dias dentro do qual 90% foram finalizadas, arredondado |
+
+### prazo_faixas_ano.csv
+
+Só de 2020 em diante e só solicitações com prazo calculável.
+
+| Coluna | Tipo | Significado |
+|---|---|---|
+| `ano` | inteiro | Ano de abertura |
+| `faixa` | texto | `0 (mesmo dia)`, `1 dia`, `2 a 3 dias`, `4 a 7 dias`, `8 a 15 dias`, `16 a 30 dias` ou `mais de 30 dias` |
+| `n` | inteiro | Solicitações |
+
+### distritos.csv
+
+| Coluna | Tipo | Significado |
+|---|---|---|
+| `distrito` | texto | Distrito declarado na solicitação ou, sem ele, o distrito onde cai a coordenada |
+| `total` | inteiro | Solicitações em toda a série |
+| `n_2015` … `n_2026` | inteiro | Solicitações em cada ano (0 se não houve) |
+
+Solicitações sem distrito e sem coordenada não entram.
+
+### grade.csv
+
+Mapa de calor em células de 500 m. Só entram solicitações com coordenada, e **células com menos de 5 solicitações são omitidas**.
+
+| Coluna | Tipo | Significado |
+|---|---|---|
+| `tema` | texto | `Todos os temas` ou um dos 6 temas com mais solicitações |
+| `lat`, `lon` | decimal | Centro da célula, em graus (WGS 84), com 5 casas |
+| `n` | inteiro | Solicitações na célula, somando todos os anos |
+
+### qualidade_periodo.csv
+
+Uma linha por arquivo trimestral da fonte.
+
+| Coluna | Tipo | Significado |
+|---|---|---|
+| `periodo` | texto | Trimestre do arquivo (ex.: `2015T1`) |
+| `linhas` | inteiro | Solicitações no arquivo, depois de tirar a sobreposição entre trimestres |
+| `dt_min`, `dt_max` | data | Primeira e última data de abertura |
+| `pct_com_coordenada` | decimal | % com coordenada dentro do município |
+| `pct_com_distrito` | decimal | % com distrito declarado |
+| `pct_com_finalizacao` | decimal | % com data de finalização preenchida |
+| `finalizacao_antes_abertura` | inteiro | Solicitações com finalização antes da abertura |
+| `sem_tema` | inteiro | Solicitações sem tema |
+
+### qualidade_distrito.csv
+
+Só solicitações com coordenada.
+
+| Coluna | Tipo | Significado |
+|---|---|---|
+| `ano` | inteiro | Ano de abertura |
+| `com_coordenada` | inteiro | Solicitações com coordenada |
+| `dentro_de_algum_distrito` | inteiro | Das anteriores, quantas caem dentro de um distrito |
+| `com_distrito_declarado` | inteiro | Das anteriores, quantas declaram o distrito |
+| `coincidem` | inteiro | Distrito declarado igual ao distrito da coordenada |
+| `distrito_recuperado` | inteiro | Sem distrito declarado, mas com distrito obtido pela coordenada |
+
+### sac_camadas.csv
+
+| Coluna | Tipo | Significado |
+|---|---|---|
+| `nome` | texto | Nome da camada no GeoSampa |
+| `n` | inteiro | Solicitações na camada |
+| `de`, `ate` | data | Primeira e última data de abertura |
+| `dt_carga` | texto | Data da carga da camada no GeoSampa, como publicada |
+| `titulo` | texto | Título da camada |
+
+### reativacao_*.csv
+
+Camada [Reativação de um abrigo ou ponto que foi extinto](./reativacao-abrigos.md), 45 registros.
+
+| Arquivo | Coluna | Tipo | Significado |
+|---|---|---|---|
+| `reativacao_resumo.csv` | `indicador`, `valor` | texto, decimal | `total` de solicitações e `prazo_mediano_dias`: mediana, em dias com fração, da abertura até o parecer |
+| `reativacao_por_mes.csv` | `ym`, `n` | mês, inteiro | Solicitações por mês de abertura |
+| `reativacao_situacao.csv` | `situacao`, `n` | texto, inteiro | Solicitações por situação, como publicada |
+| `reativacao_canal.csv` | `canal`, `n` | texto, inteiro | Solicitações por canal de atendimento |
+| `reativacao_pontos.csv` | `lat`, `lon` | decimal | Coordenada da solicitação (WGS 84, 5 casas), **sem endereço** |
+| | `ym` | mês | Mês de abertura |
+| | `situacao` | texto | Situação, como publicada |
+
+## Como citar
+
+> Barros, Tatiana. *Dados Públicos de São Paulo: SP156 e GeoSampa* (v1.0.0). Zenodo, 2026. [doi.org/10.5281/zenodo.23307709](https://doi.org/10.5281/zenodo.23307709)
+
+O arquivo [`CITATION.cff`](https://github.com/tatyquebralayout/dados-publicos-sp/blob/main/CITATION.cff) do repositório tem a citação em formato para gerenciadores de referência. Cite também a fonte original: Prefeitura de São Paulo, SP156, Portal de Dados Abertos.
+
+## Licença
+
+O código do projeto é **MIT**. Os dados de origem seguem os termos do [Portal de Dados Abertos da Prefeitura de São Paulo](https://dados.prefeitura.sp.gov.br/dataset/dados-do-sp156) e do [GeoSampa](https://geosampa.prefeitura.sp.gov.br). Confira a fonte oficial antes de redistribuir.
