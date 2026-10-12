@@ -38,8 +38,8 @@ def get_json(url: str, tentativas: int = 5) -> dict:
             time.sleep(5 * 2 ** i)
 
 
-def discover(cfg: dict) -> list[dict]:
-    """Lista os recursos de dados; marca como `xlsx_only` períodos sem CSV válido."""
+def listar(cfg: dict) -> list[dict]:
+    """Lista os recursos de dados do CKAN (um por período, CSV preferido), sem gravar nada."""
     best: dict[str, dict] = {}
     for res in get_json(cfg["sp156"]["ckan_package"])["result"]["resources"]:
         if not res["name"].strip().startswith("Dados do SP156"):
@@ -56,7 +56,12 @@ def discover(cfg: dict) -> list[dict]:
         if cur is None or (ext == "csv" and cur["ext"] != "csv"):
             best[p[1]] = {"periodo": p[1], "ano": p[0], "ext": ext, "size": res.get("size") or 0,
                           "url": url}
-    rows = sorted(best.values(), key=lambda x: x["periodo"])
+    return sorted(best.values(), key=lambda x: x["periodo"])
+
+
+def discover(cfg: dict) -> list[dict]:
+    """Lista os recursos de dados e grava o índice em config/sp156_resources.csv."""
+    rows = listar(cfg)
     with INDEX.open("w", newline="", encoding="utf-8") as fh:
         w = csv.DictWriter(fh, fieldnames=["periodo", "ano", "ext", "size", "url"])
         w.writeheader()
